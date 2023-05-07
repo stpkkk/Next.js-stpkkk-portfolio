@@ -27,7 +27,19 @@
   font-weight: 300;
 }
 
-.main {
+@font-face {
+  font-family: "Dancing Script";
+  src: url("../public/fonts/DancingScript-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Bree Serif";
+  src: url("../public/fonts/BreeSerif-Regular.ttf");
+  font-weight: 400;
+}
+
+/* .main {
   width: 100vw;
   min-height: 100vh;
   position: fixed;
@@ -36,7 +48,7 @@
   padding: 120px 24px 160px 24px;
   pointer-events: none;
   background-color: #141414;
-}
+} */
 
 /* .main:before {
   background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
@@ -60,7 +72,7 @@
   filter: invert(1);
 } */
 
-/* .gradient {
+.gradient {
   height: fit-content;
   z-index: 3;
   width: 100%;
@@ -83,7 +95,7 @@
   filter: blur(100px) saturate(150%);
   top: 80px;
   opacity: 0.15;
-} */
+}
 
 @media screen and (max-width: 640px) {
   .main {
@@ -91,18 +103,22 @@
   }
 }
 
+body {
+  @apply bg-[#141414];
+}
+
 /* Tailwind Styles */
 
-.app {
-  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto text-[#e0e0e0] sm:px-16 px-6;
+.container {
+  @apply max-w-[1600px] mx-auto p-10 text-[#e0e0e0] font-roboto bg-[#091f36] rounded-b-lg px-6 sm:p-4 sm:h-screen sm:flex sm:flex-col sm:gap-20;
 }
 
 .black_btn {
-  @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-roboto flex items-center justify-center;
+  @apply rounded-se-lg border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-roboto flex items-center justify-center;
 }
 
 .outline_btn {
-  @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-roboto flex items-center justify-center;
+  @apply rounded-se-lg border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-roboto flex items-center justify-center;
 }
 
 .head_text {
@@ -142,9 +158,9 @@
 }
 
 /* Nav Component */
-.logo_text {
+/* .logo_text {
   @apply max-sm:hidden font-dmDisplay font-semibold text-lg text-black tracking-wide;
-}
+} */
 
 .dropdown {
   @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
@@ -154,18 +170,18 @@
   @apply text-sm font-roboto text-gray-700 hover:text-gray-500 font-medium;
 }
 
-.flex-center {
+.flex_center {
   @apply flex justify-center items-center;
 } /* ! */
 
-.flex-start {
+.flex_start {
   @apply flex justify-start items-start;
 }
 
-.flex-end {
+.flex_end {
   @apply flex justify-end items-center;
-}
+} /* ! */
 
-.flex-between {
-  @apply flex justify-between items-center;
-}
+.flex_between {
+  @apply flex justify-between items-center flex-wrap;
+} /* ! */

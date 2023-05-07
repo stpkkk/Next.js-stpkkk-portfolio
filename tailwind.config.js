@@ -10,9 +10,14 @@ module.exports = {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
         dmDisplay: ["DM Serif Display", "sans-serif"],
+        dancingScript: ["Dancing Script", "sans-serif"],
+        bree: ["Bree Serif", "sans-serif"],
       },
       colors: {
         "primary-orange": "#FF5722",
+      },
+      screens: {
+        sm: { max: "640px" },
       },
     },
   },

@@ -1,7 +1,9 @@
+"use client";
+import Nav from "@components/Nav";
 import "@styles/globals.css";
 
 export const metadata = {
-  title: "stpkkk-portfolio",
+  title: "Stepanov Igor",
   description:
     "Stepanov Igor portfolio responsive web app, using Next.js, Typescript and Tailwind",
 };
@@ -10,10 +12,10 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
       <body>
-        <div className="main">
-          <div className="" />
-        </div>
-        <main className="app">{children}</main>
+        <main className="container ">
+          <Nav />
+          {children}
+        </main>
       </body>
     </html>
   );
