@@ -1,6 +1,6 @@
 "use client";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 import { useMobile } from "@hooks/useMediaQuery";
 import GithubCvLinks from "@components/GithubCvLinks";
 import TypeAnimationComp from "@components/TypeAnimationComp";
@@ -10,9 +10,9 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="flex_between w-full sm:gap-9 sm:flex-col flex_center">
-      <div>
+      <div className="sm:p-2">
         <TypeAnimationComp />
-        <h1 className="font-title text-[87px] leading-none font-dancingScript mb-4 sm:text-[32px] sm:leading-10 sm:text-center sm:m-0">
+        <h1 className="head_text sm:text-center sm:m-0">
           I am Igor Stepanov,&nbsp;
           <br className="sm:hidden" />a creative
           <br /> Frontend Developer.
@@ -24,7 +24,7 @@ const HomePage: React.FC = () => {
         alt="homepage"
         width={600}
         height={400}
-        className="rounded-lg"
+        className="rounded-lg sm:rounded-none"
       />
     </div>
   );

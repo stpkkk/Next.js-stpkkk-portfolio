@@ -14,12 +14,17 @@ const GithubCvLinks: React.FC = () => {
       });
     });
   };
+
   return (
     <div className="flex gap-4">
-      <a href="https://github.com/stpkkk" target="blank">
+      <a
+        href="https://github.com/stpkkk"
+        target="blank"
+        className="hover:text-secondary"
+      >
         <BsGithub size={30} />
       </a>
-      <button onClick={onClick} type="button">
+      <button onClick={onClick} className="hover:text-secondary" type="button">
         <BsFiletypePdf size={30} />
       </button>
     </div>

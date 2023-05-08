@@ -14,7 +14,10 @@ module.exports = {
         bree: ["Bree Serif", "sans-serif"],
       },
       colors: {
-        "primary-orange": "#FF5722",
+        primary: "#e0e0e0",
+        secondary: "#e4c341",
+        background: "#141414",
+        bgMobileNavMenu: "#1d1e22",
       },
       screens: {
         sm: { max: "640px" },
