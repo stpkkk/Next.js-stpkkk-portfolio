@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useMobile } from "@hooks/useMediaQuery";
+import { usePathname } from "next/navigation";
 import { FaHamburger } from "react-icons/fa";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import GithubCvLinks from "./GithubCvLinks";
@@ -14,6 +15,8 @@ const navLinks = [
 
 export const NavMobile: React.FC = () => {
   const [isMobileMenu, setIsMobileMenuOpen] = useState(false);
+
+  const pathname = usePathname();
 
   const handleToggleMobileMenu = () => {
     setIsMobileMenuOpen(prevState => !prevState);
@@ -38,7 +41,9 @@ export const NavMobile: React.FC = () => {
             key={link.path}
             href={link.path}
             as={link.path}
-            className="hover:text-secondary"
+            className={`${
+              pathname === link.path ? "text-secondary" : "text-primary"
+            }`}
             onClick={handleLinkClick}
           >
             {link.name}
