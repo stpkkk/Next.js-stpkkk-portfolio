@@ -67,7 +67,7 @@ body {
 /* Tailwind Styles */
 
 .container {
-  @apply max-w-[1600px] mx-auto p-10 text-primary font-roboto bg-[#091f36] rounded-b-lg px-6 sm:p-0 sm:h-screen sm:flex sm:flex-col sm:gap-16 sm:overflow-hidden;
+  @apply max-w-[1600px] mx-auto p-10 text-primary font-roboto bg-[#091f36] rounded-b-lg px-6 sm:p-0 sm:min-h-screen sm:flex sm:flex-col sm:gap-16 sm:overflow-hidden;
 }
 
 .head_text {
