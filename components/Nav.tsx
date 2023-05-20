@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useMobile } from "@hooks/useMediaQuery";
 import { usePathname } from "next/navigation";
-import { FaHamburger } from "react-icons/fa";
+import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
-import GithubCvLinks from "./GithubCvLinks";
+import { SocialLinks } from "./SocialLinks";
 
 const navLinks = [
   { path: "/", name: "Home" },
@@ -27,7 +27,7 @@ export const NavMobile: React.FC = () => {
   };
 
   return isMobileMenu ? (
-    <div className="absolute z-10 w-screen h-screen bg-bgMobileNavMenu">
+    <div className="fixed flex_end flex-col z-10 w-screen h-screen bg-bgMobileNavMenu overflow-hidden ">
       <button
         className="flex ml-auto p-4 hover:text-secondary focus:outline-none"
         onClick={handleToggleMobileMenu}
@@ -50,34 +50,36 @@ export const NavMobile: React.FC = () => {
           </Link>
         ))}
       </nav>
+      <div className="mt-auto mb-20">
+        <SocialLinks />
+      </div>
     </div>
   ) : (
-    <div className="flex_between flex-row-reverse p-4">
-      <button
-        onClick={handleToggleMobileMenu}
-        type="button"
-        className="focus:outline-none"
-      >
-        <FaHamburger size={30} />
-      </button>
-      <GithubCvLinks />
-    </div>
+    <button
+      onClick={handleToggleMobileMenu}
+      type="button"
+      className="focus:outline-none flex_end p-4"
+    >
+      <HiOutlineMenuAlt4 size={40} />
+    </button>
   );
 };
 
 export const NavDesktop: React.FC = () => {
   return (
-    <nav className="w-full flex_end flex-wrap gap-4 py-2 mb-16 font-light font-bree">
-      {navLinks.map(link => (
-        <Link
-          key={link.path}
-          href={link.path}
-          as={link.path}
-          className="hover:text-secondary"
-        >
-          {link.name}
-        </Link>
-      ))}
+    <nav className="mx-auto max-w-[1600px] w-full font-light font-bree ">
+      <ul className="fixed z-40 max-w-[1600px] mx-auto w-full top-0  px-32 flex_end flex-wrap gap-8 overflow-hidden backdrop-blur-2xl h-20 bg-black/5 ">
+        {navLinks.map(link => (
+          <Link
+            key={link.path}
+            href={link.path}
+            as={link.path}
+            className="hover:text-secondary"
+          >
+            <li>{link.name}</li>
+          </Link>
+        ))}
+      </ul>
     </nav>
   );
 };

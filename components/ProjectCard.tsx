@@ -29,7 +29,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ card, index }) => {
           </div>
         </div>
       </div>
-      <div className="line mt-20" />
+      <div className="line mt-20 sm:hidden" />
     </li>
   );
 };

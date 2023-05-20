@@ -4,7 +4,7 @@ import { ProjectCard } from "@components/ProjectCard";
 
 const ProjectPage: React.FC = () => {
   return (
-    <div className="container mx-auto flex flex-col sm:gap-0">
+    <div className="page_wrapper flex flex-col sm:gap-0">
       <h1 className="head_text">My Projects</h1>
       <ul className="flex gap-20 flex-col sm:gap-4">
         {getProjectCards.map((card, index) => (
