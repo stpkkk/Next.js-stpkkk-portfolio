@@ -71,7 +71,7 @@ body {
 }
 
 .head_text {
-  @apply text-[87px] leading-none font-dancingScript mb-4 sm:text-[32px] sm:leading-10;
+  @apply text-[87px] leading-none font-dancingScript mb-10 sm:mb-4 sm:text-[32px] sm:leading-10;
 }
 
 .desc {

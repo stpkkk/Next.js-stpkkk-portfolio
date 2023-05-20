@@ -1,9 +1,8 @@
+import { Projects } from "@components/Projects";
 import React from "react";
 
-type Props = {};
-
-const ProjectPage: React.FC = (props: Props) => {
-  return <div>ProjectPage</div>;
+const ProjectPage: React.FC = () => {
+  return <Projects />;
 };
 
 export default ProjectPage;
