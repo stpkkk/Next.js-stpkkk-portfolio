@@ -34,7 +34,7 @@ const AboutPage: React.FC = () => {
         <Skills />
       </div>
       <div className="basis-[700px] sm:p-4">
-        <h1 className="head_text sm:text-center">About Me</h1>
+        <h1 className="head_text">About Me</h1>
         <ul className="flex flex-col gap-y-4 font-bree">
           {getParagraphs.map(paragraph => (
             <li key={paragraph.id}>{paragraph.text}</li>

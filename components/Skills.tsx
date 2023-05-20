@@ -34,7 +34,7 @@ const skillList: ISkill[] = [
 export const Skills: React.FC = () => {
   return (
     <div className="p-4">
-      <ul className="flex flex-wrap items-center justify-center mx-auto gap-[20px] after:empty:flex-1">
+      <ul className="flex_center flex-wrap mx-auto gap-[20px] after:empty:flex-1">
         {skillList.map(({ id, Icon }) => (
           <li key={id} className="rounded-full text-black">
             <Icon size={40} />
