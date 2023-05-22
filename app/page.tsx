@@ -5,9 +5,18 @@ import { Clock } from "@components/Clock";
 
 const HomePage: React.FC = () => {
   return (
-    <div className="page_wrapper pb-20 px-32 flex_between w-full sm:gap-9 sm:flex-col flex_center">
-      <div className="sm:p-2 ">
-        <TypeAnimationComp />
+    <div className="page_wrapper pb-20 px-32 flex_between w-full sm:gap-9 sm:flex-col">
+      <div className="font-dancingScript mb-4 text-xl sm:text-sm sm:mb-0 sm:p-2 ">
+        <TypeAnimationComp
+          sequence={[
+            "Hello World",
+            4000,
+            "",
+            1000,
+            "This Is My Portfolio",
+            4000,
+          ]}
+        />
         <h1 className="head_text sm:text-center sm:m-0">
           I am Igor Stepanov,&nbsp;
           <br className="sm:hidden" />a creative
