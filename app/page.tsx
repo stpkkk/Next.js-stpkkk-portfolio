@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Image from "next/image";
 import TypeAnimationComp from "@components/TypeAnimationComp";
@@ -6,7 +5,7 @@ import { Clock } from "@components/Clock";
 
 const HomePage: React.FC = () => {
   return (
-    <section className="pb-20 px-32 flex_between w-full sm:gap-9 sm:flex-col flex_center">
+    <div className="page_wrapper pb-20 px-32 flex_between w-full sm:gap-9 sm:flex-col flex_center">
       <div className="sm:p-2 ">
         <TypeAnimationComp />
         <h1 className="head_text sm:text-center sm:m-0">
@@ -21,13 +20,14 @@ const HomePage: React.FC = () => {
           alt="homepage"
           width={600}
           height={400}
-          className=" rounded-lg sm:rounded-none"
+          className="w-full h-auto rounded-lg sm:rounded-none"
+          priority
         />
         <div className="absolute top-[63px] left-[60px] sm:left-[14px] sm:top-[14px]">
           <Clock />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

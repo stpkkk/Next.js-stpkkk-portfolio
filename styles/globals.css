@@ -41,12 +41,8 @@ body {
   @apply bg-black relative after:block after:content-[''] after:h-14 min-h-screen text-primary;
 }
 
-.container {
-  @apply max-w-[1600px] mx-auto mb-10  pt-24 font-roboto bg-bgContainer rounded-b-lg sm:p-0 sm:min-h-screen sm:flex sm:flex-col sm:gap-16 sm:overflow-hidden;
-}
-
 .page_wrapper {
-  @apply px-12 pb-10 sm:px-4;
+  @apply max-w-[1600px] mx-auto mb-10 pt-24 font-roboto rounded-b-lg  px-12 pb-10 sm:px-4 bg-bgContainer sm:p-0 sm:min-h-screen sm:flex sm:flex-col sm:gap-16 sm:overflow-hidden;
 }
 .head_text {
   @apply text-[87px] leading-none font-dancingScript font-bold mb-10 sm:mb-8 sm:text-[50px] sm:leading-10 sm:text-center;

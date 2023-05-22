@@ -24,4 +24,5 @@ const ProjectPage: React.FC = () => {
     </div>
   );
 };
+
 export default ProjectPage;

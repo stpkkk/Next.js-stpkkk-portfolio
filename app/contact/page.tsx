@@ -1,9 +1,7 @@
 import React from "react";
 
-type Props = {};
-
-const ContactPage: React.FC = (props: Props) => {
-  return <div>ContactPage</div>;
+const ContactPage: React.FC = () => {
+  return <div className="page_wrapper">ContactPage</div>;
 };
 
 export default ContactPage;

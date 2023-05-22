@@ -1,4 +1,3 @@
-"use client";
 import { Footer } from "@components/Footer";
 import Nav from "@components/Nav";
 import "@styles/globals.css";
@@ -13,10 +12,8 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
       <body>
-        <main className="container">
-          <Nav />
-          {children}
-        </main>
+        <Nav />
+        {children}
         <Footer />
       </body>
     </html>
