@@ -10,7 +10,7 @@ export const Claw = () => {
     >
       <defs>
         <style>
-          {`.cls-1,.cls-2{fill:#fff;}.cls-1,.cls-2,.cls-3{stroke:#000;stroke-miterlimit:10;}.cls-1{stroke-width:1.24px;}.cls-2,.cls-3{stroke-width:1.19px;}.cls-3{fill:none;}`}
+          {`.cls-1,.cls-2{fill:#fff;}.cls-1,.cls-2,.cls-3{stroke:#000;strokeMiterlimit:10;}.cls-1{strokeWidth:1.24px;}.cls-2,.cls-3{strokeWidth:1.19px;}.cls-3{fill:none;}`}
         </style>
       </defs>
       <g id="Слой_2" data-name="Слой 2">

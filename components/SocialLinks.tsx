@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsGithub, BsLinkedin, BsFiletypePdf } from "react-icons/bs";
@@ -30,14 +31,14 @@ export const SocialLinks: React.FC = () => {
     <div className="flex_center space-x-4 text-primary p-2 ">
       <ul className="flex_center space-x-4">
         {links.map(link => (
-          <a
+          <Link
             key={link.path}
             href={link.path}
             target="blank"
             className="hover:text-secondary"
           >
             <li>{link.image}</li>
-          </a>
+          </Link>
         ))}
       </ul>
       <button onClick={onClick} className="hover:text-secondary" type="button">

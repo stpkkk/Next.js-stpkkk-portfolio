@@ -16,12 +16,19 @@ module.exports = {
       colors: {
         primary: "#e0e0e0",
         secondary: "#e4c341",
-        background: "#141414",
+        black: "#141414",
         bgContainer: "#091f36",
         bgMobileNavMenu: "#1d1e22",
       },
       screens: {
         sm: { max: "640px" },
+      },
+
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "rotate(3deg)", translate: "50%" },
+          "50%": { transform: "rotate(-3deg)", translate: "50%" },
+        },
       },
     },
   },
