@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  distDir: "build",
+  reactStrictMode: true,
+  eslint: {
+    dirs: ["pages", "components"],
+  },
 };
 
 module.exports = nextConfig;
