@@ -28,8 +28,8 @@ export const SocialLinks: React.FC = () => {
     });
   };
   return (
-    <div className="flex_center space-x-4 text-primary p-2 ">
-      <ul className="flex_center space-x-4">
+    <div className="flex_center space-x-6 text-primary pb-10 ">
+      <ul className="flex_center space-x-6">
         {links.map(link => (
           <Link
             key={link.path}

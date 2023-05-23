@@ -4,7 +4,7 @@ import { LaptopCoffeeBulb } from "@public/assets/icons/LaptopCoffeeBulb";
 
 export const Meditation: React.FC = () => {
   return (
-    <div className="relative ">
+    <div className="relative">
       <div className="absolute top-1/4 flex_center animate-[wiggle_5s_ease-in-out_infinite]">
         <Guru />
       </div>

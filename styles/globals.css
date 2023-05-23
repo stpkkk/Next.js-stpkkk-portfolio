@@ -38,14 +38,15 @@
 /* Tailwind Styles */
 
 body {
-  @apply bg-black relative after:block after:content-[''] after:h-14 min-h-screen text-primary;
+  @apply min-h-screen bg-black text-primary font-roboto relative after:block after:content-[''] after:h-24 sm:after:content-none;
 }
 
 .page_wrapper {
-  @apply max-w-[1600px] mx-auto mb-10 pt-24 font-roboto rounded-b-lg  px-12 pb-10 sm:px-4 bg-bgContainer sm:p-0 sm:min-h-screen sm:flex sm:flex-col sm:gap-16 sm:overflow-hidden;
+  @apply flex justify-between items-center flex-wrap max-w-[1600px] mx-auto py-24 px-16 rounded-b-lg bg-bgContainer mb-10 sm:mb-0 sm:flex sm:flex-col sm:px-4 sm:py-10;
 }
+
 .head_text {
-  @apply text-[87px] leading-none font-dancingScript font-bold mb-10 sm:mb-8 sm:text-[50px] sm:leading-10 sm:text-center;
+  @apply text-[87px] leading-none font-dancingScript font-bold mb-10 sm:mb-8 sm:text-[36px] sm:leading-tight  sm:text-center;
 }
 
 .desc {
@@ -53,7 +54,7 @@ body {
 }
 
 .line {
-  @apply border border-t-0 border-b-secondary opacity-10 w-full;
+  @apply border border-t-0 border-b-secondary opacity-10 w-full my-20 sm:my-10;
 }
 
 /* FLex */

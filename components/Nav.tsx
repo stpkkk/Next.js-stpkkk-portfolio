@@ -34,7 +34,7 @@ export const NavMobile: React.FC = () => {
         onClick={handleToggleMobileMenu}
         type="button"
       >
-        <AiOutlineCloseCircle size={30} />
+        <AiOutlineCloseCircle size={40} />
       </button>
       <nav className="flex_center flex-col gap-2 text-4xl mx-auto font-bree relative top-1/4 -translate-y-1/2">
         {navLinks.map(link => (
@@ -56,13 +56,15 @@ export const NavMobile: React.FC = () => {
       </div>
     </div>
   ) : (
-    <button
-      onClick={handleToggleMobileMenu}
-      type="button"
-      className="focus:outline-none flex_end p-4"
-    >
-      <HiOutlineMenuAlt4 size={40} />
-    </button>
+    <div className="bg-bgContainer flex_end">
+      <button
+        onClick={handleToggleMobileMenu}
+        type="button"
+        className="focus:outline-none flex_end p-4"
+      >
+        <HiOutlineMenuAlt4 size={40} />
+      </button>
+    </div>
   );
 };
 

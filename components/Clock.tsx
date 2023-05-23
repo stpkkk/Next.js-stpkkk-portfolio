@@ -40,7 +40,7 @@ export const Clock: React.FC<ClockProps> = ({ size = 100 }) => {
       height={50}
       viewBox={`0 0 ${viewBoxSize} ${viewBoxSize + 20}`}
       xmlns="http://www.w3.org/2000/svg"
-      className="bg-black"
+      className="bg-black sm:w-[70px] sm:h-[40px]"
     >
       <text
         x={center}
@@ -49,7 +49,7 @@ export const Clock: React.FC<ClockProps> = ({ size = 100 }) => {
         fontSize="50"
         fontWeight="bold"
         fill="#fff"
-        className="font-bree tracking-wide w-full"
+        className="font-bree tracking-wide w-full sm:text-[40px]"
       >
         {`${hours}:${minutes}:${seconds}`}
       </text>
@@ -60,7 +60,7 @@ export const Clock: React.FC<ClockProps> = ({ size = 100 }) => {
         fontSize="32"
         fontWeight="bold"
         fill="#fff"
-        className="font-bree tracking-wide w-full"
+        className="font-bree tracking-wide w-full sm:text-[28px]"
       >
         {formattedDate}
       </text>

@@ -6,7 +6,7 @@ import TypeAnimationComp from "@components/TypeAnimationComp";
 
 const ProjectPage: React.FC = () => {
   return (
-    <div className="page_wrapper flex flex-col sm:gap-0 sm:flex_center">
+    <div className="page_wrapper mb-10 sm:mb-0 sm:gap-0 sm:flex_center">
       <div className="flex_between py-20 px-40 mb-20 bg-secondary rounded-lg w-full sm:px-10 sm:py-16 sm:gap-10 sm:justify-center sm:overflow-hidden">
         <div className="mb-20 max-w-[600px] text-black font-bold sm:text-center sm:mb-0 sm:flex_center ">
           <h1 className="head_text">My Projects</h1>
@@ -21,7 +21,7 @@ const ProjectPage: React.FC = () => {
         </div>
         <Meditation />
       </div>
-      <ul className="flex gap-20 flex-col sm:gap-4">
+      <ul className="flex flex-col sm:gap-0">
         {getProjectCards.map(card => (
           <ProjectCard key={card.id} card={{ ...card }} />
         ))}

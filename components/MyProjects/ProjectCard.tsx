@@ -36,7 +36,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ card }) => {
           </div>
         </div>
       </div>
-      <div className={`line my-20 sm:my-10 ${isLastCard && "hidden"}`} />
+      <div className={`line ${isLastCard && "hidden"}`} />
     </li>
   );
 };
