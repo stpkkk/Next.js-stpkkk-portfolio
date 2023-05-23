@@ -1,24 +1,29 @@
-"use client";
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-export const useMobile = () => {
-  const query = "(max-width: 640px)";
-
-  const getMatches = () => window.matchMedia(query).matches;
-
-  const [isMobile, setMobile] = useState(getMatches());
-
-  const handleChange = useCallback(() => setMobile(getMatches()), []);
+const useMediaQuery = (query: string): boolean => {
+  const [matches, setMatches] = useState(false);
 
   useEffect(() => {
-    const matchMedia = window.matchMedia(query);
+    const handleChange = (event: MediaQueryListEvent | MediaQueryList) => {
+      if ("matches" in event) {
+        setMatches(event.matches);
+      }
+    };
 
-    handleChange();
+    const mediaQuery = window.matchMedia(query);
 
-    matchMedia.addEventListener("change", handleChange);
+    handleChange(mediaQuery); // Check the initial state
 
-    return () => matchMedia.removeEventListener("change", handleChange);
-  }, [handleChange, query]);
+    // Add a listener to update matches state when the media query matches change
+    mediaQuery.addEventListener("change", handleChange);
 
-  return isMobile;
+    return () => {
+      // Cleanup the listener when the component unmounts
+      mediaQuery.removeEventListener("change", handleChange);
+    };
+  }, [query]);
+
+  return matches;
 };
+
+export default useMediaQuery;

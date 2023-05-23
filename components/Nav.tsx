@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import { useMobile } from "@hooks/useMediaQuery";
+import useMediaQuery from "@hooks/useMediaQuery";
 import { usePathname } from "next/navigation";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
@@ -88,7 +88,7 @@ export const NavDesktop: React.FC = () => {
 };
 
 const Nav: React.FC = () => {
-  const isMobile = useMobile();
+  const isMobile = useMediaQuery("(max-width: 768px)");
   return isMobile ? <NavMobile /> : <NavDesktop />;
 };
 
