@@ -4,10 +4,9 @@ export const LaptopCoffeeBulb: React.FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="540"
-      height="477"
       viewBox="0 0 540 477"
       fill="none"
+      className="w-full h-auto"
     >
       <path
         d="M391.606 462.934L372.406 473.66L349.135 438.224L374.043 424.31L391.606 462.934Z"

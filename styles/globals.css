@@ -38,7 +38,7 @@
 /* Tailwind Styles */
 
 body {
-  @apply min-h-screen bg-black text-primary font-roboto relative after:block after:content-[''] after:h-24 sm:after:content-none;
+  @apply min-h-screen bg-[url(../public/assets/icons/bg.svg)] text-primary font-roboto relative after:block after:content-[''] after:h-24 sm:after:content-none;
 }
 
 .page_wrapper {

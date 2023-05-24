@@ -4,10 +4,9 @@ export const Guru: React.FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="240"
-      height="279"
       viewBox="0 0 240 279"
       fill="none"
+      className="w-full h-auto"
     >
       <path
         d="M102.441 73.9909L52.0439 162.516V172.463H201.259L139.004 73.9909H102.441Z"
