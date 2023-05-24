@@ -4,11 +4,11 @@ import { LaptopCoffeeBulb } from "@public/assets/icons/LaptopCoffeeBulb";
 
 export const Meditation: React.FC = () => {
   return (
-    <div className="relative">
+    <div className="relative left-0 top-0">
       <div className="absolute top-1/4 flex_center animate-[wiggle_5s_ease-in-out_infinite]">
         <Guru />
       </div>
-      <div className="absolute -left-[60%] sm:-left-[57%] animate-[wiggle_4s_ease-in-out_infinite]">
+      <div className="absolute -left-[50%] sm:-left-[57%] animate-[wiggle_4s_ease-in-out_infinite]">
         <LaptopCoffeeBulb />
       </div>
       <object

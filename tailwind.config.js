@@ -21,7 +21,7 @@ module.exports = {
         bgMobileNavMenu: "#1d1e22",
       },
       screens: {
-        sm: { max: "640px" },
+        sm: { max: "768px" },
       },
 
       keyframes: {

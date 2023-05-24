@@ -23,8 +23,8 @@ const AboutPage: React.FC = () => {
   ];
 
   return (
-    <div className="page_wrapper sm:gap-4">
-      <div className="bg-secondary flex_center flex-col max-w-[700px] w-full self-start rounded-lg">
+    <div className="page_wrapper gap-16 sm:gap-4">
+      <div className="bg-secondary flex_center flex-col rounded-lg basis-[40%]">
         <Image
           src={"/assets/images/about.jpg"}
           alt="about"
@@ -35,7 +35,7 @@ const AboutPage: React.FC = () => {
         />
         <Skills />
       </div>
-      <div className="basis-[700px] sm:p-4">
+      <div className="flex-1 sm:p-4">
         <h1 className="head_text">About Me</h1>
         <ul className="flex flex-col gap-y-4 font-bree">
           {getParagraphs.map(paragraph => (

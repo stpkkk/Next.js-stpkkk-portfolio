@@ -46,7 +46,7 @@ body {
 }
 
 .head_text {
-  @apply text-[87px] leading-none font-dancingScript font-bold mb-10 sm:mb-8 sm:text-[36px] sm:leading-tight  sm:text-center;
+  @apply text-[80px] leading-none font-dancingScript font-bold mb-10 sm:mb-8 sm:text-[36px] sm:leading-tight  sm:text-center;
 }
 
 .desc {
