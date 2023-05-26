@@ -42,7 +42,7 @@ body {
 }
 
 .page_wrapper {
-  @apply flex justify-between items-center flex-wrap max-w-[1600px] mx-auto py-24 px-16 rounded-b-lg bg-bgContainer mb-10 sm:mb-0 sm:flex sm:flex-col sm:px-4 sm:py-10;
+  @apply flex justify-between items-center flex-wrap max-w-[1600px] w-full mx-auto py-24 px-16 rounded-b-lg bg-bgContainer mb-10 sm:mb-0 sm:flex sm:flex-col sm:px-4 sm:py-10;
 }
 
 .head_text {
