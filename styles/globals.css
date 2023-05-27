@@ -49,6 +49,10 @@ body {
   @apply text-[80px] leading-none font-dancingScript font-bold mb-10 sm:mb-8 sm:text-[36px] sm:leading-tight  sm:text-center;
 }
 
+/* .input {
+  @apply bg-gray-100 p-3 rounded-lg outline-none border-none font-medium text-black;
+} */
+
 .desc {
   @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
 }
