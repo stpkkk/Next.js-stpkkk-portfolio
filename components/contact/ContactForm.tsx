@@ -1,5 +1,7 @@
 "use client";
 import React, { useState, ChangeEvent, FormEvent } from "react";
+import emailjs from "@emailjs/browser";
+import { ModalSuccess } from "./ModalSuccess";
 
 interface FormErrors {
   name?: string;
@@ -20,6 +22,7 @@ export const ContactForm: React.FC = () => {
     message: "",
   });
   const [errors, setErrors] = useState<FormErrors>({});
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>
@@ -59,23 +62,50 @@ export const ContactForm: React.FC = () => {
       return;
     }
 
-    // Submit form logic goes here
+    // Submit form logic
     console.log("Form submitted:", formData);
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+
     setErrors({});
+
+    setLoading(true);
+    emailjs
+      .send(
+        "service_0jm95v8", //from services
+        "template_4yabinl", //from templates
+        {
+          from_name: formData.name,
+          to_name: "Igor",
+          from_email: formData.email,
+          to_email: "stipyk1309@gmail.com",
+          message: formData.message,
+        },
+        "uYcNVfB6L-ldGWARD" //public key
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you. I will get back to you as soon as possible 🫡.");
+
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        error => {
+          setLoading(false);
+          console.log(error);
+        }
+      );
   };
 
   return (
-    <form className="max-w-md mx-auto" onSubmit={handleSubmit}>
+    <form
+      className="flex flex-col gap-4 max-w-md mx-auto"
+      onSubmit={handleSubmit}
+    >
       <div className="mb-4">
-        <label
-          htmlFor="name"
-          className="block mb-2 font-semibold text-gray-700"
-        >
+        <label htmlFor="name" className="block mb-2 font-semibold text-white">
           Name
         </label>
         <input
@@ -84,35 +114,32 @@ export const ContactForm: React.FC = () => {
           name="name"
           value={formData.name}
           onChange={handleChange}
-          className={`w-full px-3 py-2 border ${
-            errors.name ? "border-red-500" : "border-gray-300"
-          } rounded-md`}
+          className={`input ${errors.name && "ring-2 ring-[tomato]"}`}
         />
-        {errors.name && <p className="text-red-500 mt-1">{errors.name}</p>}
+        {errors.name && (
+          <p className="absolute text-sm text-[tomato] mt-1">{errors.name}</p>
+        )}
       </div>
       <div className="mb-4">
-        <label
-          htmlFor="email"
-          className="block mb-2 font-semibold text-gray-700"
-        >
+        <label htmlFor="email" className="block mb-2 font-semibold text-white">
           Email
         </label>
         <input
-          type="email"
+          type="text"
           id="email"
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className={`w-full px-3 py-2 border ${
-            errors.email ? "border-red-500" : "border-gray-300"
-          } rounded-md`}
+          className={`input ${errors.email && "ring-2 ring-[tomato]"}`}
         />
-        {errors.email && <p className="text-red-500 mt-1">{errors.email}</p>}
+        {errors.email && (
+          <p className="absolute text-sm text-[tomato] mt-1">{errors.email}</p>
+        )}
       </div>
-      <div className="mb-4">
+      <div className="mb-8">
         <label
           htmlFor="message"
-          className="block mb-2 font-semibold text-gray-700"
+          className="block mb-2 font-semibold text-white"
         >
           Message
         </label>
@@ -122,19 +149,14 @@ export const ContactForm: React.FC = () => {
           rows={4}
           value={formData.message}
           onChange={handleChange}
-          className={`w-full px-3 py-2 border ${
-            errors.message ? "border-red-500" : "border-gray-300"
-          } rounded-md`}
-        ></textarea>
+          className={`input ${errors.message && "ring-2 ring-[tomato]"}`}
+        />
         {errors.message && (
-          <p className="text-red-500 mt-1">{errors.message}</p>
+          <p className="absolute text-sm text-[tomato]">{errors.message}</p>
         )}
       </div>
-      <button
-        type="submit"
-        className="px-4 py-2 bg-blue-500 text-white rounded-md"
-      >
-        Submit
+      <button type="submit" className="max-w-[150px] btn btn-border-drawing">
+        {loading ? "Sending..." : "Submit"}
       </button>
     </form>
   );

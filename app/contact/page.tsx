@@ -4,7 +4,7 @@ import { ContactForm } from "../../components/contact/ContactForm";
 
 const ContactPage: React.FC = () => {
   return (
-    <div className="page_wrapper gap-10">
+    <div className="page_wrapper gap-10 relative">
       <div className="max-w-[500px] w-full ">
         <h1 className="head_text text-center">Contact</h1>
         <ContactForm />
