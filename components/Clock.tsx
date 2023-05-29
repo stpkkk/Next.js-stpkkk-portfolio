@@ -29,7 +29,6 @@ export const Clock: React.FC<ClockProps> = ({ size = 100 }) => {
 
   const hours = formatDigits(time.getHours());
   const minutes = formatDigits(time.getMinutes());
-  // const seconds = formatDigits(time.getSeconds());
 
   const viewBoxSize = size + 20;
   const center = viewBoxSize / 2;

@@ -7,7 +7,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ card }) => {
   const isLastCard = card.id === getProjectCards.length - 1;
 
   return (
-    <li className="flex justify-between flex-row flex-wrap sm:gap-4 sm:flex-col sm:min-h-screen">
+    <li className="flex justify-between flex-row flex-wrap sm:gap-4 md:flex-col md:items-center">
       <div className="flex flex-col basis-1/2 text-[16px] sm:text-[14px] p-8 pl-0 sm:p-4 sm:gap-4">
         <h2 className="font-bree bold text-4xl mb-10 text-secondary sm:text-3x sm:mb-2">
           {card.title}
@@ -30,7 +30,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ card }) => {
               alt="Project Image"
               priority
               width={600}
-              height={400}
+              height={370}
               className="object-cover h-full rounded-lg hover:scale-110 transition-transform duration-700"
             />
           </div>

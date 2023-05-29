@@ -22,6 +22,7 @@ module.exports = {
       },
       screens: {
         sm: { max: "768px" },
+        md: { max: "1200px" },
       },
 
       keyframes: {

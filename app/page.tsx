@@ -5,8 +5,8 @@ import { Clock } from "@components/Clock";
 
 const HomePage: React.FC = () => {
   return (
-    <div className="page_wrapper sm:flex-col sm:justify-center sm:h-screen">
-      <div className="font-dancingScript text-xl sm:text-sm sm:mb-0 sm:p-2 sm:text-center">
+    <div className="page_wrapper md:flex-col sm:justify-center sm:flex-wrap sm:h-[calc(100vh-72px)] overflow-auto">
+      <div className="font-dancingScript text-xl md:text-sm sm:mb-0 sm:p-2 md:text-center">
         <TypeAnimationComp
           sequence={[
             "Hello World",
@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
             4000,
           ]}
         />
-        <h1 className="head_text sm:text-center m-0">
+        <h1 className="head_text sm:text-center m-0 sm:text-[42px]">
           I am Igor Stepanov,&nbsp;
           <br className="sm:hidden" />a creative
           <br /> Frontend Developer.
@@ -27,7 +27,7 @@ const HomePage: React.FC = () => {
         <Image
           src="/assets/images/homepage.jpg"
           alt="homepage"
-          width={600}
+          width={550}
           height={400}
           className="w-full h-auto rounded-lg"
           priority

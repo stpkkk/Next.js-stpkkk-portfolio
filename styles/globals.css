@@ -42,11 +42,11 @@ body {
 }
 
 .page_wrapper {
-  @apply flex justify-between items-center flex-wrap max-w-[1600px] w-full mx-auto py-24 px-16 rounded-b-lg bg-bgContainer mb-10 sm:mb-0 sm:flex sm:flex-col sm:px-4 sm:py-10;
+  @apply flex justify-between items-center flex-wrap max-w-[1600px] w-full mx-auto py-24 px-16 rounded-b-lg bg-bgContainer mb-10 sm:mb-0 sm:flex md:flex-col sm:px-4 sm:py-10;
 }
 
 .head_text {
-  @apply text-[80px] leading-none font-dancingScript font-bold mb-10 sm:mb-8 sm:text-[36px] sm:leading-tight  sm:text-center;
+  @apply text-[80px] leading-none font-dancingScript font-bold mb-10 sm:mb-8 md:text-[60px] sm:leading-tight md:text-center;
 }
 
 .input {

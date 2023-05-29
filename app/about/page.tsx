@@ -23,7 +23,7 @@ const AboutPage: React.FC = () => {
   ];
 
   return (
-    <div className="page_wrapper gap-16 sm:gap-4">
+    <div className="page_wrapper md:flex-wrap gap-16 sm:gap-4">
       <div className="bg-secondary flex_center flex-col rounded-lg basis-[40%]">
         <Image
           src={"/assets/images/about.jpg"}
