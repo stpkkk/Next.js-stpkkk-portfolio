@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import contactImage from "public/assets/images/contact.jpg";
 import { ContactForm } from "../../components/contact/ContactForm";
 
 const ContactPage: React.FC = () => {
@@ -11,11 +12,11 @@ const ContactPage: React.FC = () => {
       </div>
       <div className="bg-secondary px-20 rounded-lg sm:px-0">
         <Image
-          src="/assets/images/contact.jpg"
+          src={contactImage}
           alt="contact"
           width={700}
           height={300}
-          className="max-w-[700px] w-full h-auto rounded-lg"
+          className=" w-full h-auto rounded-lg"
           priority
         />
       </div>

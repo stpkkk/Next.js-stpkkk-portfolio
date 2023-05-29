@@ -32,6 +32,7 @@ export const SocialLinks: React.FC = () => {
       <ul className="flex_center space-x-6">
         {links.map(link => (
           <Link
+            as={"image"}
             key={link.path}
             href={link.path}
             target="blank"

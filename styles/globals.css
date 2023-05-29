@@ -78,6 +78,26 @@ body {
   @apply flex justify-between items-center flex-wrap;
 }
 
+/* Modal animation */
+
+.modal {
+  position: fixed;
+  z-index: 40;
+  top: -100%;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: top 2s ease-out;
+}
+
+.modal-open {
+  top: 25%;
+}
+
+.modal-close {
+  top: -100%;
+}
+
 /* Custom Button */
 
 .btn {

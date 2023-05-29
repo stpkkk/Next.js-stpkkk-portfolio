@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
-import { ModalSuccess } from "./ModalSuccess";
+import { Modal } from "./Modal";
 
 interface FormErrors {
   name?: string;
@@ -23,6 +23,7 @@ export const ContactForm: React.FC = () => {
   });
   const [errors, setErrors] = useState<FormErrors>({});
   const [loading, setLoading] = useState(false);
+  const [isModal, setIsModal] = useState(false);
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>
@@ -84,8 +85,7 @@ export const ContactForm: React.FC = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible 🫡.");
-
+          setIsModal(true);
           setFormData({
             name: "",
             email: "",
@@ -104,6 +104,7 @@ export const ContactForm: React.FC = () => {
       className="flex flex-col gap-4 max-w-md mx-auto"
       onSubmit={handleSubmit}
     >
+      {isModal && <Modal isModal={isModal} setIsModal={setIsModal} />}
       <div className="mb-4">
         <label htmlFor="name" className="block mb-2 font-semibold text-white">
           Name
