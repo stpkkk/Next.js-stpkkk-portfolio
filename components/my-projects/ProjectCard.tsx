@@ -8,7 +8,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ card }) => {
 
   return (
     <li className="flex justify-between flex-row flex-wrap sm:gap-4 md:flex-col md:items-center">
-      <div className="flex flex-col basis-1/2 text-[16px] sm:text-[14px] p-8 pl-0 sm:p-4 sm:gap-4">
+      <div className="flex flex-col basis-1/2 text-[16px] sm:text-[14px] p-8 pl-0 sm:p-0 sm:gap-4">
         <h2 className="font-bree bold text-4xl mb-10 text-secondary sm:text-3x sm:mb-2">
           {card.title}
         </h2>
