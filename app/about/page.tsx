@@ -2,6 +2,10 @@ import React from "react";
 import Image from "next/image";
 import { Skills } from "@components/Skills";
 
+export const metadata = {
+  title: "Stepanov Igor | About",
+};
+
 const AboutPage: React.FC = () => {
   const getParagraphs = [
     {

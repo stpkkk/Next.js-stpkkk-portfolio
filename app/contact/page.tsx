@@ -3,6 +3,10 @@ import Image from "next/image";
 import contactImage from "public/assets/images/contact.jpg";
 import { ContactForm } from "../../components/contact/ContactForm";
 
+export const metadata = {
+  title: "Stepanov Igor | Contact",
+};
+
 const ContactPage: React.FC = () => {
   return (
     <div className="page_wrapper md:flex_center gap-10 relative">
