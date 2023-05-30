@@ -30,7 +30,7 @@ export const NavMobile: React.FC = () => {
   return isMobileMenu ? (
     <div className="fixed flex_end flex-col z-10 w-screen h-screen bg-bgMobileNavMenu overflow-hidden">
       <button
-        className="flex ml-auto p-4 hover:text-secondary focus:outline-none"
+        className="flex ml-auto p-2 hover:text-secondary focus:outline-none"
         onClick={handleToggleMobileMenu}
         type="button"
       >
@@ -60,7 +60,7 @@ export const NavMobile: React.FC = () => {
       <button
         onClick={handleToggleMobileMenu}
         type="button"
-        className="focus:outline-none flex_end p-4"
+        className="focus:outline-none flex_end p-2"
       >
         <HiOutlineMenuAlt4 size={40} />
       </button>

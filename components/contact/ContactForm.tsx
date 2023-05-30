@@ -157,7 +157,7 @@ export const ContactForm: React.FC = () => {
         )}
       </div>
       <button type="submit" className="max-w-[150px] btn btn-border-drawing">
-        {loading ? "Sending..." : "Submit"}
+        {loading ? "Sending..." : "Send"}
       </button>
     </form>
   );

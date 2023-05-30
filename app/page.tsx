@@ -5,7 +5,7 @@ import { Clock } from "@components/Clock";
 
 const HomePage: React.FC = () => {
   return (
-    <div className="page_wrapper md:flex-col sm:justify-center sm:flex-wrap sm:h-[calc(100vh-72px)] overflow-auto">
+    <div className="page_wrapper md:flex-col sm:justify-center sm:flex-wrap sm:h-[calc(100vh-56px)] overflow-auto">
       <div className="font-dancingScript text-xl md:text-sm sm:mb-0 sm:p-2 md:text-center">
         <TypeAnimationComp
           sequence={[
