@@ -5,6 +5,7 @@ export type ProjectCardProps = {
     id: number;
     title: string;
     image: StaticImageData;
+    url: string;
     description: string;
     liveLink: string;
     codeLink: string;

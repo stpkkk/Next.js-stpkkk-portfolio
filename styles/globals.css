@@ -98,6 +98,17 @@ body {
   top: -100%;
 }
 
+/* Swiper */
+
+:root {
+  --swiper-pagination-color: #e6e6e6;
+  --swiper-pagination-bullet-size: 10px;
+  --swiper-pagination-bullet-inactive-color: #b6ccc2;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bottom: 0px;
+}
+
 /* Custom Button */
 
 .btn {
