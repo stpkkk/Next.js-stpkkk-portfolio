@@ -3,10 +3,9 @@ export interface IProjectCard {
   title: string;
   image: string;
   url: string;
-  description: string;
-  descriptionAdded: string;
-  liveLink: string;
-  codeLink: string;
+  description: string[][];
+  liveLink?: string;
+  codeLink?: string;
   slider: string[];
 }
 

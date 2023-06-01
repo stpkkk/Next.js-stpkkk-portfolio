@@ -30,6 +30,7 @@ const HomePage: React.FC = () => {
           width={550}
           height={400}
           className="w-full h-auto rounded-lg"
+          quality={100}
           priority
         />
         <div className="absolute top-[30px] left-[30px] sm:left-[14px] sm:top-[14px]">

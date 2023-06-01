@@ -22,6 +22,7 @@ const ContactPage: React.FC = () => {
           height={300}
           className=" w-full h-auto rounded-lg"
           priority
+          quality={100}
         />
       </div>
     </div>

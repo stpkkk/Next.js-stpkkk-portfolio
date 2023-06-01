@@ -2,7 +2,7 @@
 import React, { useRef } from "react";
 import "swiper/swiper.min.css";
 import "swiper/css/pagination";
-import SwiperCore, { Navigation, Pagination } from "swiper";
+import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import useMediaQuery from "@hooks/useMediaQuery";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
@@ -10,18 +10,24 @@ import Image from "next/image";
 
 SwiperCore.use([Navigation]);
 
-interface SliderProps {
+interface ISliderProps {
   slides?: string[];
 }
 
-export const Slider = ({ slides }: SliderProps) => {
+export const Slider = ({ slides }: ISliderProps) => {
   const swiperRef = useRef<SwiperCore>();
   const isMobile = useMediaQuery("(max-width: 768px)");
 
   return (
-    <div className="relative max-w-[1000px] w-full mx-auto bg-secondary p-20 rounded-lg sm:px-0 sm:py-4">
+    <div className="relative max-w-[1100px] md:w-full mx-auto rounded-lg sm:px-0 sm:py-4">
       <Swiper
         slidesPerView={1}
+        spaceBetween={40}
+        centeredSlides={true}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
         loop
         navigation={{
           prevEl: ".swiper-button-prev",
@@ -30,8 +36,9 @@ export const Slider = ({ slides }: SliderProps) => {
         onBeforeInit={swiper => {
           swiperRef.current = swiper;
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         pagination={isMobile ? { clickable: true } : false}
+        className=""
       >
         {slides?.map((slide, index) => (
           <SwiperSlide key={index}>
@@ -42,12 +49,16 @@ export const Slider = ({ slides }: SliderProps) => {
               height={100}
               priority
               className="h-auto w-full "
+              placeholder="blur"
+              blurDataURL="URL"
+              quality={100}
+              key={slide}
             />
           </SwiperSlide>
         ))}
       </Swiper>
       {isMobile || (
-        <div className="absolute top-1/2 -translate-y-1/2 left-4 z-10">
+        <div className="absolute top-1/2 -translate-y-1/2 -left-12 z-10">
           <button
             type="button"
             className="swiper-button-prev"
@@ -58,7 +69,7 @@ export const Slider = ({ slides }: SliderProps) => {
         </div>
       )}
       {isMobile || (
-        <div className="absolute top-1/2 -translate-y-1/2 right-4 z-10">
+        <div className="absolute top-1/2 -translate-y-1/2 -right-12 z-10">
           <button
             type="button"
             className="swiper-button-next"

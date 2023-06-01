@@ -36,6 +36,7 @@ const AboutPage: React.FC = () => {
           height={400}
           className="w-full h-auto p-10"
           priority
+          quality={100}
         />
         <Skills />
       </div>
