@@ -13,7 +13,9 @@ const ProjectPage: React.FC = () => {
     <div className="page_wrapper mb-10 sm:mb-0 sm:gap-0 sm:flex_center">
       <div className="flex_center gap-16 py-16 px-20 mb-20 bg-secondary rounded-lg w-full md:px-10 sm:gap-0 md:flex-col md:gap-0 md:mb-10">
         <div className="basis-[50%] text-black font-bold sm:text-center sm:mb-0 sm:flex_center">
-          <h1 className="head_text">My Projects</h1>
+          <h1 className="head_text flex_start md:justify-center">
+            My Projects
+          </h1>
           <div className="font-bree text-xl h-[115px] md:h-[80px]">
             <TypeAnimationComp
               sequence={[

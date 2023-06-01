@@ -1,13 +1,15 @@
-import { StaticImageData } from "next/image";
+export interface IProjectCard {
+  id: number;
+  title: string;
+  image: string;
+  url: string;
+  description: string;
+  descriptionAdded: string;
+  liveLink: string;
+  codeLink: string;
+  slider: string[];
+}
 
 export type ProjectCardProps = {
-  card: {
-    id: number;
-    title: string;
-    image: StaticImageData;
-    url: string;
-    description: string;
-    liveLink: string;
-    codeLink: string;
-  };
+  card: IProjectCard;
 };

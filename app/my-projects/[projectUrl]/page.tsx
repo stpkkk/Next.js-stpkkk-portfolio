@@ -23,7 +23,10 @@ export default async function Project({ params: { projectUrl } }: Props) {
   return (
     <div className="page_wrapper">
       <h1 className="head_text">{project?.title}</h1>
-      <div>{project?.description}</div>
+      <div className=" mb-[105px] sm:mb-[50px]">
+        {project?.description}
+        {project?.descriptionAdded}
+      </div>
       <Slider slides={project?.slider} />
     </div>
   );
