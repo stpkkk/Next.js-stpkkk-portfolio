@@ -1,9 +1,18 @@
 import Link from "next/link";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsGithub, BsLinkedin, BsFiletypePdf } from "react-icons/bs";
+import {
+  BsGithub,
+  BsLinkedin,
+  BsFiletypePdf,
+  BsTelegram,
+} from "react-icons/bs";
 
 const links = [
+  {
+    path: "https://t.me/stpkk",
+    image: <BsTelegram size={30} />,
+  },
   {
     path: "https://github.com/stpkkk",
     image: <BsGithub size={30} />,

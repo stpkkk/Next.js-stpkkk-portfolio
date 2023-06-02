@@ -28,23 +28,25 @@ const AboutPage: React.FC = () => {
 
   return (
     <div className="page_wrapper md:flex-wrap gap-16 sm:gap-4">
-      <div className="bg-secondary flex_center flex-col rounded-lg basis-[40%]">
+      <div className="bg-secondary flex_center flex-col rounded-lg basis-[40%] p-6 sm:p-0">
+        <h1 className="head_text text-black">About Me</h1>
         <Image
           src={"/assets/images/about.jpg"}
           alt="about"
           width={600}
           height={400}
-          className="w-full h-auto p-10"
+          className="w-full h-auto p-10 sm:p-0"
           priority
           quality={100}
         />
+
         <Skills />
       </div>
       <div className="flex-1">
-        <h1 className="head_text">About Me</h1>
+        <div className="bg-[url(../public/assets/images/hero.png)] bg-contain bg-no-repeat mx-auto h-[300px] w-[280px] mb-10 sm:h-[200px] sm:w-[200px] sm:mb-4 sm:my-4" />
         <ul className="flex flex-col gap-y-4 font-bree">
-          {getParagraphs.map(paragraph => (
-            <li key={paragraph.id}>{paragraph.text}</li>
+          {getParagraphs.map(p => (
+            <li key={p.id}>{p.text}</li>
           ))}
         </ul>
       </div>
