@@ -48,7 +48,7 @@ export const Slider = ({ slides }: ISliderProps) => {
               width={800}
               height={100}
               priority
-              className="h-auto w-full "
+              className="h-auto w-full"
               placeholder="blur"
               blurDataURL="URL"
               quality={100}

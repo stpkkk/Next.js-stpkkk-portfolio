@@ -3,6 +3,7 @@ import { ProjectCardProps } from "@models/card";
 import Image from "next/image";
 import { getProjectCards } from "@data/project";
 import Link from "next/link";
+import { Button } from "@components/Button";
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ card }) => {
   const isLastCard = card.id === getProjectCards.length - 1;
@@ -16,16 +17,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ card }) => {
           </h2>
         </Link>
         <p className="block">{card.description.at(0)}</p>
-        <Link
-          href={`/my-projects/${card.url}`}
-          as={`/my-projects/${card.url}`}
-          rel="noopener noreferrer"
-          className="mr-auto mb-10 md:mb-0"
-        >
-          <button type="button" className="btn btn-border-drawing">
-            Learn More...
-          </button>
-        </Link>
+        <Button
+          url={`/my-projects/${card.url}`}
+          text="Learn More..."
+          target="_self"
+        />
       </div>
       <div className="transition-transform duration-700 ">
         <div className="relative rounded-lg">

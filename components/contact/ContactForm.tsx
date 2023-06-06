@@ -114,6 +114,7 @@ export const ContactForm: React.FC = () => {
           id="name"
           name="name"
           value={formData.name}
+          placeholder="What`s Your Name"
           onChange={handleChange}
           className={`input ${errors.name && "ring-2 ring-[tomato]"}`}
         />
@@ -130,6 +131,7 @@ export const ContactForm: React.FC = () => {
           id="email"
           name="email"
           value={formData.email}
+          placeholder="What`s Your Email"
           onChange={handleChange}
           className={`input ${errors.email && "ring-2 ring-[tomato]"}`}
         />
@@ -149,6 +151,7 @@ export const ContactForm: React.FC = () => {
           name="message"
           rows={4}
           value={formData.message}
+          placeholder="Write Me Something"
           onChange={handleChange}
           className={`input ${errors.message && "ring-2 ring-[tomato]"}`}
         />

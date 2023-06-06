@@ -71,7 +71,7 @@ export const NavMobile: React.FC = () => {
 export const NavDesktop: React.FC = () => {
   return (
     <nav className="mx-auto max-w-[1600px] w-full font-light font-bree ">
-      <ul className="fixed z-40 max-w-[1600px] mx-auto w-full top-0  px-32 flex_end flex-wrap gap-8 overflow-hidden backdrop-blur-2xl h-20 bg-black/5">
+      <ul className="fixed z-40 max-w-[1600px] mx-auto w-full top-0   flex_end flex-wrap gap-8 overflow-hidden backdrop-blur-2xl h-20 bg-black/5 px-16">
         {navLinks.map(link => (
           <Link
             key={link.path}

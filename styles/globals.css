@@ -40,13 +40,11 @@
 body {
   @apply min-h-screen bg-[url(../public/assets/icons/bg.svg)] text-primary font-roboto relative after:block after:content-[''] after:h-24 sm:after:content-none;
 }
-
 .page_wrapper {
-  @apply flex justify-between items-center flex-wrap max-w-[1600px] w-full mx-auto py-24 px-16 rounded-b-lg bg-bgContainer mb-10 sm:mb-0 sm:flex md:flex-col sm:px-4 sm:py-6 sm:rounded-none;
+  @apply flex items-center flex-wrap max-w-[1600px] w-full mx-auto py-24 px-16 rounded-b-lg bg-bgContainer mb-10 sm:mb-0 sm:flex md:flex-col sm:px-4 sm:py-6 sm:rounded-none;
 }
-
 .head_text {
-  @apply text-[80px] leading-none font-dancingScript font-bold mb-10 sm:mb-6 md:text-[50px] sm:leading-tight text-center;
+  @apply text-[80px] leading-none font-dancingScript font-bold mb-10 sm:mb-6 md:text-[50px] sm:leading-tight;
 }
 
 .input {

@@ -10,17 +10,17 @@ export const metadata = {
 const ContactPage: React.FC = () => {
   return (
     <div className="page_wrapper md:flex_center gap-10 relative">
-      <div className="max-w-[500px] w-full">
+      <div className="flex-1 w-full">
         <h1 className="head_text text-center">Contact</h1>
         <ContactForm />
       </div>
-      <div className="basis-1/2 bg-secondary h-auto rounded-lg sm:px-0">
+      <div className="flex-1 bg-secondary rounded-lg sm:px-0">
         <Image
           src={contactImage}
           alt="contact"
           width={700}
           height={300}
-          className=" w-full h-auto rounded-lg"
+          className="w-full h-auto rounded-lg"
           priority
           quality={100}
         />
