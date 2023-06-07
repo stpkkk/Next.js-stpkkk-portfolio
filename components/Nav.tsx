@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { SocialLinks } from "./SocialLinks";
+import { ThemeToggle } from "@components/ThemeToggle";
 
 const navLinks = [
   { path: "/", name: "Home" },
@@ -28,9 +29,9 @@ export const NavMobile: React.FC = () => {
   };
 
   return isMobileMenu ? (
-    <div className="fixed flex_end flex-col z-10 w-screen h-screen bg-bgMobileNavMenu overflow-hidden">
+    <div className="fixed flex_end flex-col z-10 w-screen h-screen dark:bg-bgMobileNavMenu bg-primary overflow-auto touch-auto">
       <button
-        className="flex ml-auto p-4 hover:text-secondary focus:outline-none"
+        className="flex ml-auto p-4 focus:text-secondary focus:outline-none"
         onClick={handleToggleMobileMenu}
         type="button"
       >
@@ -43,7 +44,7 @@ export const NavMobile: React.FC = () => {
             href={link.path}
             as={link.path}
             className={`${
-              pathname === link.path ? "text-secondary" : "text-primary"
+              pathname === link.path ? "text-secondary" : "dark:text-primary"
             }`}
             onClick={handleLinkClick}
           >
@@ -51,16 +52,17 @@ export const NavMobile: React.FC = () => {
           </Link>
         ))}
       </nav>
-      <div className="mt-auto mb-20">
+      <div className="mt-auto mb-20 text-black dark:text-primary">
         <SocialLinks />
       </div>
     </div>
   ) : (
-    <div className="bg-bgContainer flex_end">
+    <div className="flex_between p-4 dark:bg-bgContainer bg-white flex_end text-black dark:text-primary">
+      <ThemeToggle />
       <button
         onClick={handleToggleMobileMenu}
         type="button"
-        className="focus:outline-none flex_end p-4"
+        className="focus:outline-none"
       >
         <HiOutlineMenuAlt4 size={40} />
       </button>
@@ -70,8 +72,11 @@ export const NavMobile: React.FC = () => {
 
 export const NavDesktop: React.FC = () => {
   return (
-    <nav className="mx-auto max-w-[1600px] w-full font-light font-bree ">
-      <ul className="fixed z-40 max-w-[1600px] mx-auto w-full top-0   flex_end flex-wrap gap-8 overflow-hidden backdrop-blur-2xl h-20 bg-black/5 px-16">
+    <nav className="fixed left-1/2 -translate-x-1/2 z-20 flex_between items-center max-w-[1600px] w-full px-16 font-bold font-bree backdrop-blur-2xl bg-black/2">
+      <div className="relative">
+        <ThemeToggle />
+      </div>
+      <ul className="top-0 flex items-center gap-8 h-20">
         {navLinks.map(link => (
           <Link
             key={link.path}

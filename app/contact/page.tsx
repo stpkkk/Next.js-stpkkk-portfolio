@@ -9,7 +9,7 @@ export const metadata = {
 
 const ContactPage: React.FC = () => {
   return (
-    <div className="page_wrapper md:flex_center gap-10 relative">
+    <div className="page_wrapper justify-between md:flex_center gap-32 relative">
       <div className="flex-1 w-full">
         <h1 className="head_text text-center">Contact</h1>
         <ContactForm />

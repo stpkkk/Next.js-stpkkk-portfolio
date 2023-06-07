@@ -1,6 +1,7 @@
+import "@styles/globals.css";
 import { Footer } from "@components/Footer";
 import Nav from "@components/Nav";
-import "@styles/globals.css";
+import { Providers } from "./providers";
 
 export const metadata = {
   title: "Stepanov Igor",
@@ -12,9 +13,11 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body>
-        <Nav />
-        {children}
-        <Footer />
+        <Providers>
+          <Nav />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

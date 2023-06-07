@@ -16,7 +16,7 @@ export const Modal: React.FC<ModalProps> = ({ isModal, setIsModal }) => {
       const timeoutId = setTimeout(() => {
         setIsVisible(false);
         setIsModal(false);
-      }, 5000); // Change the timeout to 5000 milliseconds (5 seconds)
+      }, 5000);
       return () => clearTimeout(timeoutId);
     }
   }, [isModal, setIsModal]);
