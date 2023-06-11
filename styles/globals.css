@@ -159,7 +159,7 @@ body {
 
 /* Animation On Switching Theme */
 .theme-transition {
-  transition: 2s all ease-in-out;
+  transition: 1s all ease-in-out;
 }
 
 /* Contact Modal Animation */
