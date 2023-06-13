@@ -27,7 +27,7 @@ export const ThemeToggle = () => {
       className={`flex justify-between items-center w-[42px] h-[20px] p-[2px] rounded-3xl cursor-pointer ${
         theme === "dark" ? "bg-primary" : "bg-black"
       }`}
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
       <div className="text-[12px] transition-colors duration-300">☀️</div>
       <div className="text-[12px] transition-colors duration-300">🌙</div>
