@@ -4,8 +4,8 @@ export interface INav {
 }
 
 export const navLinks: INav[] = [
-  { path: "/", name: "Home" },
-  { path: "/about", name: "About" },
-  { path: "/my-projects", name: "Projects" },
-  { path: "/contact", name: "Contact" },
+  { path: "/", name: "Главная" },
+  { path: "/about", name: "Обо мне" },
+  { path: "/my-projects", name: "Проекты" },
+  { path: "/contact", name: "Контакты" },
 ];
