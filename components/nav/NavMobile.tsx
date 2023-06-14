@@ -30,7 +30,7 @@ export const NavMobile: React.FC = () => {
       >
         <AiOutlineCloseCircle size={40} />
       </button>
-      <nav className="flex_center flex-col gap-2 text-4xl mx-auto font-bree relative top-1/4 -translate-y-1/2">
+      <nav className="flex_center flex-col gap-2 text-5xl mx-auto font-amatic relative top-1/4 -translate-y-1/2">
         {navLinks.map(link => (
           <Link
             key={link.path}

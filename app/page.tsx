@@ -6,23 +6,22 @@ import { Clock } from "@components/Clock";
 const HomePage: React.FC = () => {
   return (
     <div className="page_wrapper sm:gap-10">
-      <div className="flex-1 font-dancingScript md:text-center sm:flex-none">
-        <div className="text-2xl sm:text-xl">
+      <div className="flex-1 font-amatic md:text-center sm:flex-none">
+        <div className="flex_start text-2xl sm:text-xl">
           <TypeAnimationComp
             sequence={[
-              "Hello World",
+              "Привет, мир!",
               4000,
               "",
               1000,
-              "This Is My Portfolio",
+              "Это мое портфолио!",
               4000,
             ]}
           />
         </div>
         <h1 className="head_text m-0  sm:text-[42px] ">
-          I am Igor Stepanov,&nbsp;
-          <br className="md:hidden" />a creative
-          <br /> Frontend Developer.
+          Меня зовут Игорь Степанов,&nbsp;
+          <br />я Фронтенд-разработчик.
         </h1>
       </div>
       <div className="relative">

@@ -23,7 +23,7 @@ export default async function Project({ params: { projectUrl } }: Props) {
 
   if (!project) {
     return (
-      <div className="text-3xl flex_center text-primary p-20 font-bree">
+      <div className="text-3xl flex_center text-primary p-20 font-ubuntu">
         Project not found 😢
       </div>
     );

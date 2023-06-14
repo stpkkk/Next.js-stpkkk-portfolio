@@ -48,7 +48,7 @@ export const Clock: React.FC<ClockProps> = ({ size = 100 }) => {
         fontSize="50"
         fontWeight="bold"
         fill="#fff"
-        className="font-bree tracking-wide w-full sm:text-[40px]"
+        className="font-ubuntu tracking-wide w-full sm:text-[40px]"
       >
         {`${hours}:${minutes}`}
       </text>
@@ -59,7 +59,7 @@ export const Clock: React.FC<ClockProps> = ({ size = 100 }) => {
         fontSize="32"
         fontWeight="bold"
         fill="#fff"
-        className="font-bree tracking-wide w-full sm:text-[28px]"
+        className="font-ubuntu tracking-wide w-full sm:text-[28px]"
       >
         {formattedDate}
       </text>

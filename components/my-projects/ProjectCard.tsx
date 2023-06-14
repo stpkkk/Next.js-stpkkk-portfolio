@@ -12,14 +12,14 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ card }) => {
     <li className="flex justify-between items-center flex-row flex-wrap  md:flex-col md:items-center">
       <div className="flex flex-col basis-1/2 flex-grow-1 text-[16px] sm:text-[14px] gap-10 md:mb-10">
         <Link href={`/my-projects/${card.url}`} as={`/my-projects/${card.url}`}>
-          <h2 className="font-bree bold text-4xl text-secondary sm:text-3x sm:mb-2">
+          <h2 className="font-amatic font-bold text-5xl text-secondary sm:text-3x sm:mb-2">
             {card.title}
           </h2>
         </Link>
         <p className="block">{card.description.at(0)}</p>
         <Button
           url={`/my-projects/${card.url}`}
-          text="Learn More..."
+          text="Узнать больше..."
           target="_self"
         />
       </div>

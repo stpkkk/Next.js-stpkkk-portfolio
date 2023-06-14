@@ -28,9 +28,9 @@ export const Modal: React.FC<ModalProps> = ({ isModal, setIsModal }) => {
           <div className="absolute -top-[26.3em]">
             <Claw />
           </div>
-          <div className="text-5xl leading-snug font-bree text-center text-white font-bold sm:text-2xl">
+          <div className="text-5xl leading-snug font-ubuntu text-center text-white font-bold sm:text-2xl">
             Thank you.
-            <br /> I will get back to you as soon as possible! 🫡
+            <br /> Супер! Скоро я вам отвечу! 🫡
           </div>
         </div>
       )}

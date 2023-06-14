@@ -3,21 +3,21 @@ import { IProjectCard } from "@models/card";
 export const getProjectCards: IProjectCard[] = [
   {
     id: 0,
-    title: "Insurance Calculator",
+    title: "Калькулятор страхования бизнеса",
     image: "/assets/images/insurance-calculator/calc-1.png",
     url: "insurance-calculator",
     description: [
       [
-        "Business Insurance Calculator App, a cutting-edge application which i developed with a team of skilled developers, using React, TypeScript, an intuitive admin side, backend data fetching, and enhanced with the power of styled components. This remarkable app was crafted specifically for a prestigious bank, aiming to streamline and simplify the process of obtaining accurate insurance quotes for businesses.",
+        "Приложение 'Калькулятор страхования бизнеса' - передовое приложение, которое я разработал вместе с командой опытных разработчиков, используя React, TypeScript, интуитивный административный интерфейс, получение данных с сервера и усиленное с помощью возможностей styled components. Это замечательное приложение было создано специально для престижного банка с целью упростить и ускорить процесс получения точных страховых котировок для бизнеса..",
       ],
       [
-        "The heart of the Business Insurance Calculator lies within its interactive quiz-like questionnaire, which prompts users with a series of well-crafted questions to assess their insurance needs. The intuitive flow and well-structured interface guide users through the process, ensuring they provide all the necessary information required to generate an accurate insurance quote.",
+        "Сердцем Калькулятора страхования для бизнеса является интерактивный опрос, напоминающий викторину, который задает пользователям ряд грамотно составленных вопросов для оценки их потребностей в страховании. Интуитивный ход и хорошо структурированный интерфейс проводят пользователей через процесс, обеспечивая, чтобы они предоставили всю необходимую информацию для получения точного страхового предложения.",
       ],
       [
-        "On the admin side, the Business Insurance Calculator incorporates an intuitive dashboard that empowers the bank's administrators to efficiently manage and customize the app's settings, questionnaire options, and insurance parameters.My contribution as a frontend developer to the Business Insurance Calculator has been invaluable. Through the utilization of React, TypeScript, an intuitive admin side, backend data fetching, and styled components, i have played a crucial role in shaping a visually appealing and highly functional application. ",
+        "На стороне администратора Калькулятора страхования бизнеса реализован интуитивный панель управления, которая дает возможность администраторам банка эффективно управлять и настраивать параметры приложения, варианты опросника и страховые параметры. Мой вклад в качестве фронтенд-разработчика в Калькулятор страхования бизнеса был неоценимым. С использованием React, TypeScript, интуитивного административного интерфейса, извлечения данных с бэкэнда и стилизованных компонентов, я сыграл важную роль в создании визуально привлекательного и высокофункционального приложения.",
       ],
       [
-        "The application was developed under a non-disclosure agreement, so unfortunately i can not provide you with links!",
+        "Приложение было разработано в соответствии с соглашением о неразглашении, поэтому, к сожалению, я не могу предоставить вам ссылки!",
       ],
     ],
     slider: [
@@ -36,19 +36,19 @@ export const getProjectCards: IProjectCard[] = [
     url: "rukki",
     description: [
       [
-        "Rukki Pro is a leading company specializing in the rental of heavy construction equipment. As a frontend developer working closely with a dedicated team, I have contributed to the development and maintenance of their innovative web application. Leveraging the power of Next.js, TypeScript, and Styled Components, we have created a seamless user experience for Rukki Pro's customers.",
+        "Rukki Pro - ведущая компания, специализирующаяся на аренде тяжелого строительного оборудования. В качестве фронтенд-разработчика, работающего в тесном сотрудничестве с преданным коллективом, я внес свой вклад в разработку и поддержку их инновационного веб-приложения. Используя возможности Next.js, TypeScript и Styled Components, мы создали плавный пользовательский опыт для клиентов Rukki Pro.",
       ],
       [
-        " With a focus on usability and performance, our team has implemented intuitive interfaces that allow users to easily browse and select the equipment they need.",
+        "С акцентом на удобство использования и производительность, наша команда разработала интуитивные интерфейсы, которые позволяют пользователям легко просматривать и выбирать необходимое оборудование.",
       ],
       [
-        "By utilizing Next.js, we have ensured fast page loads and efficient server-side rendering, providing a smooth and responsive application. Working in an agile development environment, I have actively participated in sprint planning, code reviews, and collaborative problem-solving sessions.",
+        "С помощью Next.js мы обеспечили быструю загрузку страниц и эффективное серверное рендеринг, обеспечивая плавное и отзывчивое приложение. Работая в гибкой среде разработки, я активно участвовал в планировании спринтов, ревью кода и коллаборативных сессиях по поиску решений проблем.",
       ],
       [
-        "This collaborative approach has allowed us to deliver timely updates and enhancements to the web application, keeping it up-to-date with the ever-evolving needs of Rukki Pro and its customers. My involvement as a frontend developer at Rukki Pro has not only strengthened my technical skills in Next.js, TypeScript, and Styled Components, but it has also provided me with valuable experience in working on a real-world application. This project has showcased my ability to contribute to a dynamic development team, deliver high-quality code, and create exceptional user experiences.",
+        "Этот совместный подход позволил нам своевременно обновлять и усовершенствовать веб-приложение, поддерживая его актуальность в соответствии с постоянно меняющимися потребностями Rukki Pro и его клиентов. Мое участие в качестве фронтенд-разработчика в Rukki Pro не только укрепило мои технические навыки в Next.js, TypeScript и Styled Components, но также дало мне ценный опыт работы над реальным приложением. Этот проект показал мою способность вносить вклад в динамичную команду разработки, создавать качественный код и создавать исключительные пользовательские впечатления.",
       ],
       [
-        "The application was developed under a non-disclosure agreement, so unfortunately i can not provide you with code link!",
+        "Это приложение было разработано в соответствии с соглашением о неразглашении, поэтому, к сожалению, я не могу предоставить вам ссылку на код!",
       ],
     ],
     liveLink: "https://rukki.pro/",
@@ -67,7 +67,7 @@ export const getProjectCards: IProjectCard[] = [
     url: "dashboard",
     description: [
       [
-        "The Dashboard project is a web application that uses technologies like React, Redux Toolkit, TypeScript, Highcharts, and Styled Components to provide users with visual insights and analytics for a specific data set. The application fetches data from a JSON server and uses Highcharts to create customizable and interactive charts",
+        "Проект 'Dashboard' - это веб-приложение, которое использует такие технологии, как React, Redux Toolkit, TypeScript, Highcharts и Styled Components, чтобы предоставить пользователям визуальные исследования и аналитику для определенного набора данных. Приложение получает данные с JSON-сервера и использует Highcharts для создания настраиваемых и интерактивных диаграмм.",
       ],
     ],
     liveLink: "https://stpkkk-dashboard.netlify.app/",
@@ -86,7 +86,7 @@ export const getProjectCards: IProjectCard[] = [
     url: "technomedia",
     description: [
       [
-        "A single-page web application with three cards has been implemented: articles, courses and media, each card contains stories, by clicking on the title of the story, the article, course or media of the same name opens.",
+        "Реализовано одностраничное веб-приложение с тремя карточками: статьи, курсы и медиа. Каждая карточка содержит истории, и при нажатии на заголовок истории открывается соответствующая статья, курс или медиа.",
       ],
     ],
     liveLink: "https://stpk-technomedia.netlify.app/",
@@ -106,7 +106,7 @@ export const getProjectCards: IProjectCard[] = [
     url: "lamborghini",
     description: [
       [
-        "This app is built using React, utilizes Typescript and Styled components also built to be efficient and fast, with the ability to change the layout and design depending on the device used. It is built with an adaptive design, which means that the layout and functionality of the website automatically adjusts to the user`s device. Made according to the figma layout",
+        "Это приложение создано с использованием React, использует TypeScript и Styled Components, также разработано для эффективной и быстрой работы, с возможностью изменения макета и дизайна в зависимости от используемого устройства. Оно основано на адаптивном дизайне, что означает, что макет и функциональность веб-сайта автоматически настраиваются под устройство пользователя. Создано в соответствии с макетом в Figma.",
       ],
     ],
     liveLink: "https://lamborghini-super-trofeo.netlify.app/",
@@ -126,7 +126,7 @@ export const getProjectCards: IProjectCard[] = [
     url: "welbex-table",
     description: [
       [
-        "Test task for the position of a Frontend developer at Welbex using the React.js, PostgreSQL, PgAdmin, Sass. A single-page web application has been implemented to display a table with the ability to sort and paginate. The backend part is implemented as PostgreSQL DBMS and pgAdmin application. The deployment of the server part of the project was implemented using the Heroku cloud and pgAdmin application",
+        "Тестовое задание на позицию Фронтенд разработчика в Welbex с использованием React.js, PostgreSQL, PgAdmin, Sass. Было создано одностраничное веб-приложение для отображения таблицы с возможностью сортировки и пагинации. Бэкенд часть реализована с использованием СУБД PostgreSQL и приложения pgAdmin. Развертывание серверной части проекта было выполнено с использованием облачного сервиса Heroku и приложения pgAdmin. Тестовое было оценено на 16 баллов из 20!",
       ],
     ],
     liveLink: "https://delivery-table.netlify.app/",
@@ -145,7 +145,7 @@ export const getProjectCards: IProjectCard[] = [
     url: "bankist",
     description: [
       [
-        "Bankist is a fictional online bank. It is a project introduced by Jonas Schmedtmann in order to practice DOM manipulation and user interaction. Bankist has an option to log in to the account and use different functionalities, almost like in an actual bank! In this app you can: Login, Transfer a value to another account, Get loans, Close (delete) account",
+        "Bankist - это вымышленный онлайн-банк. Это проект, созданный Йонасом Шмедтманном для практики манипулирования DOM и взаимодействия с пользователем. У Bankist есть возможность войти в учетную запись и использовать различные функции, почти как в реальном банке! В этом приложении вы можете: Войти в систему, Перевести средства на другой счет, Получить кредиты, Закрыть (удалить) учетную запись.",
       ],
     ],
     liveLink: "https://stpkkk.github.io/Bankist/",
@@ -164,7 +164,7 @@ export const getProjectCards: IProjectCard[] = [
     url: "image-generator",
     description: [
       [
-        "An image generator application that uses OpenAI API is a software tool that generates images based on user input, utilizing OpenAI`s deep learning models to learn and generate images according to specified parameters. The application may offer to save or share their generated images. At this moment App doesn`t work because API not free!",
+        "Приложение для генерации изображений, использующее API OpenAI, является программным инструментом, который генерирует изображения на основе ввода пользователя, используя глубокие модели обучения OpenAI для изучения и создания изображений в соответствии с указанными параметрами. Приложение может предлагать сохранять или делиться созданными изображениями. В данный момент приложение не работает, так как API не является бесплатным!",
       ],
     ],
     liveLink: "https://stpkk-image-generator.netlify.app/",
@@ -178,7 +178,7 @@ export const getProjectCards: IProjectCard[] = [
     url: "kartoshechka",
     description: [
       [
-        "Kartoshechka is a dynamic web application built with Vite, Tailwind CSS, TypeScript, Swiper, React Input Mask, and Adaptive Design. It offers users a seamless and intuitive experience for managing and organizing their personal tasks and to-do lists. Kartoshechka follows an adaptive design approach, ensuring that the application looks and works seamlessly across different devices and browsers. Whether users access Kartoshechka on their desktop, tablet, or mobile device, they will find a consistent and optimized experience.",
+        "Kartoshechka - это динамическое веб-приложение, разработанное с использованием Vite, Tailwind CSS, TypeScript, Swiper, React Input Mask и адаптивного дизайна. Оно предлагает пользователям плавный и интуитивно понятный опыт управления и организации их личных задач и списков дел. Kartoshechka следует принципам адаптивного дизайна, обеспечивая безупречный внешний вид и работу приложения на различных устройствах и веб-браузерах. Приложение выполнено с адаптивной версткой",
       ],
     ],
     liveLink: "https://kartoshechka.netlify.app/",

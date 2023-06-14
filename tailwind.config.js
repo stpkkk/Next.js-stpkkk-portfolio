@@ -9,6 +9,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        amatic: ["Amatic", "sans-serif"],
+        ubuntu: ["Ubuntu", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
         dmDisplay: ["DM Serif Display", "sans-serif"],
         dancingScript: ["Dancing Script", "sans-serif"],

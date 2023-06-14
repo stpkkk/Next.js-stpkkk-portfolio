@@ -11,7 +11,7 @@ const ContactPage: React.FC = () => {
   return (
     <div className="page_wrapper justify-between md:flex_center gap-32 relative">
       <div className="flex-1 w-full">
-        <h1 className="head_text text-center">Contact</h1>
+        <h1 className="head_text text-center">Напишите мне</h1>
         <ContactForm />
       </div>
       <div className="flex-1 bg-secondary rounded-lg sm:px-0">
