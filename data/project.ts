@@ -139,13 +139,32 @@ export const getProjectCards: IProjectCard[] = [
     ],
   },
   {
-    id: 6,
+    id: 5,
+    title: "Bankist",
+    image: "/assets/images/bankist/bankist-2.png",
+    url: "bankist",
+    description: [
+      [
+        "Bankist is a fictional online bank. It is a project introduced by Jonas Schmedtmann in order to practice DOM manipulation and user interaction. Bankist has an option to log in to the account and use different functionalities, almost like in an actual bank! In this app you can: Login, Transfer a value to another account, Get loans, Close (delete) account",
+      ],
+    ],
+    liveLink: "https://stpkkk.github.io/Bankist/",
+    codeLink: "https://github.com/stpkkk/Bankist",
+    slider: [
+      "/assets/images/bankist/bankist-1.png",
+      "/assets/images/bankist/bankist-2.png",
+      "/assets/images/bankist/bankist-3.png",
+      "/assets/images/bankist/bankist-4.png",
+    ],
+  },
+  {
+    id: 7,
     title: "Image-Generator",
     image: "/assets/images/image-generator/image-generator.png",
     url: "image-generator",
     description: [
       [
-        "An image generator application that uses OpenAI API is a software tool that generates images based on user input, utilizing OpenAI`s deep learning models to learn and generate images according to specified parameters. The application may offer to save or share their generated images.",
+        "An image generator application that uses OpenAI API is a software tool that generates images based on user input, utilizing OpenAI`s deep learning models to learn and generate images according to specified parameters. The application may offer to save or share their generated images. At this moment App doesn`t work because API not free!",
       ],
     ],
     liveLink: "https://stpkk-image-generator.netlify.app/",
@@ -153,7 +172,7 @@ export const getProjectCards: IProjectCard[] = [
     slider: ["/assets/images/image-generator/image-generator.png"],
   },
   {
-    id: 7,
+    id: 8,
     title: "Kartoshechka",
     image: "/assets/images/kartoshka/kartoshka-1.jpg",
     url: "kartoshechka",
