@@ -4,7 +4,7 @@ import contactImage from "public/assets/images/contact.jpg";
 import { ContactForm } from "../../components/contact/ContactForm";
 
 export const metadata = {
-  title: "Stepanov Igor | Contact",
+  title: "Степанов Игорь | Контакты",
 };
 
 const ContactPage: React.FC = () => {

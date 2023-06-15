@@ -4,9 +4,9 @@ import Nav from "@components/nav/Nav";
 import { Providers } from "./providers";
 
 export const metadata = {
-  title: "Stepanov Igor",
+  title: "Степанов Игорь",
   description:
-    "Stepanov Igor portfolio responsive web app, using Next.js, Typescript and Tailwind",
+    "Степанов Игорь веб-приложение с использованием Next.js, Typescript, Tailwind и адаптивной версткой",
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {

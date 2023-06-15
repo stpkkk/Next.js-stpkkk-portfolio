@@ -5,7 +5,7 @@ import HeroImage from "public/assets/images/hero.png";
 import { Skills } from "@components/Skills";
 
 export const metadata = {
-  title: "Stepanov Igor | About",
+  title: "Степанов Игорь | Обо мне",
 };
 
 const AboutPage: React.FC = () => {

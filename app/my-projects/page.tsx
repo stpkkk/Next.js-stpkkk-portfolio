@@ -5,7 +5,7 @@ import { Meditation } from "@components/my-projects/Meditation";
 import TypeAnimationComp from "@components/TypeAnimationComp";
 
 export const metadata = {
-  title: "Stepanov Igor | Projects",
+  title: "Степанов Игорь | Мои проекты",
 };
 
 const ProjectPage: React.FC = () => {
@@ -16,7 +16,7 @@ const ProjectPage: React.FC = () => {
           <h1 className="head_text flex_start md:justify-center">
             Мои Проекты
           </h1>
-          <div className="font-amatic text-3xl h-[115px] md:h-[80px]">
+          <div className="font-amatic text-3xl sm:text-2xl h-[115px] md:h-[80px]">
             <TypeAnimationComp
               sequence={[
                 "Уделяя пристальное внимание деталям, я стараюсь, чтобы код был чистым, хорошо организованным и без ошибок.",

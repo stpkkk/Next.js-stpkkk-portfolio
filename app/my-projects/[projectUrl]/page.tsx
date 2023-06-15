@@ -14,7 +14,7 @@ export async function generateMetadata({
   params: { projectUrl },
 }: Props): Promise<Metadata> {
   return {
-    title: `Stepanov Igor | ${projectUrl}`,
+    title: `Степанов Игорь | ${projectUrl}`,
   };
 }
 
