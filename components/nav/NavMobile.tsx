@@ -56,7 +56,7 @@ export const NavMobile: React.FC = () => {
         <Link
           href={`https://next-js-stpkkk-portfolio.vercel.app${pathname}`}
           className="hover:text-secondary"
-          as={pathname}
+          as={`https://next-js-stpkkk-portfolio.vercel.app${pathname}`}
         >
           EN
         </Link>
