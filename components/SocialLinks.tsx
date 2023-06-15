@@ -37,7 +37,7 @@ export const SocialLinks: React.FC = () => {
     });
   };
   return (
-    <div className="flex_center space-x-6 text-primary sm:text-black pb-10 sm:dark:text-primary">
+    <div className="flex_end max-w-[1600px] mx-auto space-x-6 text-primary sm:text-black pb-10 sm:dark:text-primary">
       <ul className="flex_center space-x-6">
         {links.map(link => (
           <Link
