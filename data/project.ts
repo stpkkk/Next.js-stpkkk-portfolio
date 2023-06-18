@@ -14,7 +14,7 @@ export const getProjectCards: IProjectCard[] = [
         "The heart of the Business Insurance Calculator lies within its interactive quiz-like questionnaire, which prompts users with a series of well-crafted questions to assess their insurance needs. The intuitive flow and well-structured interface guide users through the process, ensuring they provide all the necessary information required to generate an accurate insurance quote.",
       ],
       [
-        "On the admin side, the Business Insurance Calculator incorporates an intuitive dashboard that empowers the bank's administrators to efficiently manage and customize the app's settings, questionnaire options, and insurance parameters.My contribution as a frontend developer to the Business Insurance Calculator has been invaluable. Through the utilization of React, TypeScript, an intuitive admin side, backend data fetching, and styled components, i have played a crucial role in shaping a visually appealing and highly functional application. ",
+        "On the admin side, the Business Insurance Calculator incorporates an intuitive dashboard that empowers the bank's administrators to efficiently manage and customize the app's settings, questionnaire options, and insurance parameters.My contribution as a frontend developer to the Business Insurance Calculator has been invaluable. Through the utilization of React, TypeScript, an intuitive admin side, backend data fetching, and styled components, i have played a crucial role in shaping a visually appealing and highly functional application.",
       ],
       [
         "The application was developed under a non-disclosure agreement, so unfortunately i can not provide you with links!",
@@ -39,7 +39,7 @@ export const getProjectCards: IProjectCard[] = [
         "Rukki Pro is a leading company specializing in the rental of heavy construction equipment. As a frontend developer working closely with a dedicated team, I have contributed to the development and maintenance of their innovative web application. Leveraging the power of Next.js, TypeScript, and Styled Components, we have created a seamless user experience for Rukki Pro's customers.",
       ],
       [
-        " With a focus on usability and performance, our team has implemented intuitive interfaces that allow users to easily browse and select the equipment they need.",
+        "With a focus on usability and performance, our team has implemented intuitive interfaces that allow users to easily browse and select the equipment they need.",
       ],
       [
         "By utilizing Next.js, we have ensured fast page loads and efficient server-side rendering, providing a smooth and responsive application. Working in an agile development environment, I have actively participated in sprint planning, code reviews, and collaborative problem-solving sessions.",
