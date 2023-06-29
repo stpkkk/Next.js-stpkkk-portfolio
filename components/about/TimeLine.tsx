@@ -1,13 +1,14 @@
+"use client";
 import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { experience } from "@data/experience";
+import { experience } from "@data";
 import { BsRocket } from "react-icons/bs";
 
-export const TimeLine: React.FC = () => {
+const TimeLine: React.FC = () => {
   const formatDate = (date: string | number | Date) => {
     return new Intl.DateTimeFormat("ru-RU", {
       month: "numeric",
@@ -56,3 +57,5 @@ export const TimeLine: React.FC = () => {
     </VerticalTimeline>
   );
 };
+
+export default TimeLine;

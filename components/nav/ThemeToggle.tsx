@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
-export const ThemeToggle = () => {
+const ThemeToggle = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
@@ -39,3 +39,5 @@ export const ThemeToggle = () => {
     </div>
   );
 };
+
+export default ThemeToggle;

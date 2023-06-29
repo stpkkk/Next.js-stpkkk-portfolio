@@ -1,4 +1,4 @@
-import { IProjectCard } from "@models/card";
+import { IProjectCard } from "@models";
 
 export const getProjectCards: IProjectCard[] = [
   {

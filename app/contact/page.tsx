@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import contactImage from "public/assets/images/contact.jpg";
-import { ContactForm } from "../../components/contact/ContactForm";
+import { ContactForm } from "@components";
 
 export const metadata = {
   title: "Степанов Игорь | Контакты",

@@ -1,10 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import { ThemeToggle } from "./ThemeToggle";
-import { navLinks } from "@data/nav";
+import ThemeToggle from "./ThemeToggle";
+import { navLinks } from "@data";
 import { usePathname } from "next/navigation";
 
-export const NavDesktop: React.FC = () => {
+const NavDesktop: React.FC = () => {
   const pathname = usePathname();
 
   return (
@@ -38,3 +38,5 @@ export const NavDesktop: React.FC = () => {
     </header>
   );
 };
+
+export default NavDesktop;

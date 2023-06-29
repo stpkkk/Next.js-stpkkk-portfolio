@@ -5,7 +5,7 @@ interface ClockProps {
   size?: number;
 }
 
-export const Clock: React.FC<ClockProps> = ({ size = 100 }) => {
+const Clock: React.FC<ClockProps> = ({ size = 100 }) => {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
@@ -66,3 +66,5 @@ export const Clock: React.FC<ClockProps> = ({ size = 100 }) => {
     </svg>
   );
 };
+
+export default Clock;

@@ -1,14 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
-import { navLinks } from "@data/nav";
+import { navLinks } from "@data";
 import Link from "next/link";
-import { SocialLinks } from "@components/SocialLinks";
-import { ThemeToggle } from "./ThemeToggle";
+import { SocialLinks } from "@components";
+import ThemeToggle from "./ThemeToggle";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
-export const NavMobile: React.FC = () => {
+const NavMobile: React.FC = () => {
   const [isMobileMenu, setIsMobileMenuOpen] = useState(false);
 
   const pathname = usePathname();
@@ -71,3 +71,5 @@ export const NavMobile: React.FC = () => {
     </div>
   );
 };
+
+export default NavMobile;

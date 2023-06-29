@@ -1,5 +1,5 @@
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import {
   BsGithub,
@@ -24,7 +24,7 @@ const links = [
   { path: "/contact", image: <AiOutlineMail size={30} /> },
 ];
 
-export const SocialLinks: React.FC = () => {
+const SocialLinks: React.FC = () => {
   const onClick = () => {
     fetch("Степанов-Игорь-Резюме.pdf").then(response => {
       response.blob().then(blob => {
@@ -57,3 +57,5 @@ export const SocialLinks: React.FC = () => {
     </div>
   );
 };
+
+export default SocialLinks;

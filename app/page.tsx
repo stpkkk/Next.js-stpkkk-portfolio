@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import TypeAnimationComp from "@components/TypeAnimationComp";
-import { Clock } from "@components/Clock";
+import { Clock, TypeAnimationComp } from "@components";
 
 const HomePage: React.FC = () => {
   return (
