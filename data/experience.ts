@@ -7,12 +7,12 @@ export const experience: IExperience[] = [
     title: "Rukki Pro",
     dateStart: "2023-02-01T00:00:00.035Z",
     dateEnd: "2023-06-15T00:00:00.035Z",
-    location: "Moscow",
+    location: "Москва",
     link: "https://rukki.pro/",
     linkTitle: "rukki.pro",
     position: "Junior Frontend-Developer",
     description:
-      "Worked remotely, participated in the implementation of interfaces. I joined the project at the final stage and successfully cooperated with the team. I successfully eliminated all interface bugs, optimized the application, at the moment we are finishing the implementation of all business requirements and, together with the team, we preparing the project for production",
+      "Работал в удаленном формате, участвовал в реализации интерфейсов. Присоединился к проекту на финальной стадии и успешно влился. Успешно устранил все баги интерфейса, оптимизировал приложение, на текущий момент заканчиваю реализацию всех бизнес-требований и совместно с командой готовлю проект к production",
     stack: [
       "Next.js",
       "React",
@@ -25,15 +25,15 @@ export const experience: IExperience[] = [
   },
   {
     id: 1,
-    title: "Technomedia",
+    title: "Техномедия",
     dateStart: "2022-10-01T00:00:00.035Z",
     dateEnd: "2023-02-15T00:00:00.035Z",
-    location: "Petrozavodsk",
+    location: "Петрозаводск",
     link: "https://sysdyn.ru/",
     linkTitle: "sysdyn.ru",
     position: "Intern Frontend-Developer",
     description:
-      "Joined the company as a novice developer, participated in discussions, fixed bugs, improved existing web applications and participated in the development of new ones",
+      "Пришел в компанию начинающим разработчиком, участвовал в обсуждениях, фиксил баги, дорабатывал существующие web-приложения и участвовал в разработке новых",
     stack: [
       "React",
       "Redux Toolkit",
@@ -46,7 +46,7 @@ export const experience: IExperience[] = [
   },
   {
     id: 2,
-    title: "Freelance",
+    title: "Фриланс",
     dateStart: "2021-12-01T00:00:00.035Z",
     dateEnd: "2022-09-15T00:00:00.035Z",
     location: "",
@@ -54,7 +54,7 @@ export const experience: IExperience[] = [
     linkTitle: "",
     position: "Frontend-developer",
     description:
-      "Development of web applications, creating Layouts, website and application support",
+      "Разработка web-приложений , адаптивная и кроссбраузерная верстка, поддержка сайтов и приложений",
     stack: [
       "React",
       "Javascript",
