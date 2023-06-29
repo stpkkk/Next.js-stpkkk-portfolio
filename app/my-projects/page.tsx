@@ -1,5 +1,5 @@
 import React from "react";
-import { getProjectCards } from "@data/project";
+import { getProjectCards } from "@data";
 import { ProjectCard, Meditation, TypeAnimationComp } from "@components";
 
 export const metadata = {

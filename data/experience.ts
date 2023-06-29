@@ -1,4 +1,4 @@
-import { IExperience } from "@models";
+import { IExperience } from "@types";
 import { MdWorkOutline } from "react-icons/md";
 
 export const experience: IExperience[] = [

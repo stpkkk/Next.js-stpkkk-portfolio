@@ -1,4 +1,4 @@
-import { IParagraphs } from "@models";
+import { IParagraphs } from "@types";
 
 export const getParagraphs: IParagraphs[] = [
   {
