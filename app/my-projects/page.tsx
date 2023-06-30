@@ -1,8 +1,6 @@
 import React from "react";
 import { getProjectCards } from "@data/project";
-import { ProjectCard } from "@components/my-projects/ProjectCard";
-import { Meditation } from "@components/my-projects/Meditation";
-import TypeAnimationComp from "@components/TypeAnimationComp";
+import { ProjectCard, Meditation, TypeAnimationComp } from "@components";
 
 export const metadata = {
   title: "Stepanov Igor | Projects",

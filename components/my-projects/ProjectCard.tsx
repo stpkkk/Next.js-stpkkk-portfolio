@@ -1,11 +1,11 @@
 import React from "react";
-import { ProjectCardProps } from "@models/card";
+import { ProjectCardProps } from "@types";
 import Image from "next/image";
-import { getProjectCards } from "@data/project";
+import { getProjectCards } from "@data";
 import Link from "next/link";
-import { Button } from "@components/Button";
+import { Button } from "@components";
 
-export const ProjectCard: React.FC<ProjectCardProps> = ({ card }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ card }) => {
   const isLastCard = card.id === getProjectCards.length - 1;
 
   return (
@@ -40,3 +40,5 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ card }) => {
     </li>
   );
 };
+
+export default ProjectCard;

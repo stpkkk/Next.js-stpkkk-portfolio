@@ -4,7 +4,7 @@ import "swiper/swiper.min.css";
 import "swiper/css/pagination";
 import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import useMediaQuery from "@hooks/useMediaQuery";
+import { useMediaQuery } from "@hooks";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Image from "next/image";
 
@@ -14,7 +14,7 @@ interface ISliderProps {
   slides?: string[];
 }
 
-export const Slider = ({ slides }: ISliderProps) => {
+const Slider = ({ slides }: ISliderProps) => {
   const swiperRef = useRef<SwiperCore>();
   const isMobile = useMediaQuery("(max-width: 768px)");
 
@@ -82,3 +82,5 @@ export const Slider = ({ slides }: ISliderProps) => {
     </div>
   );
 };
+
+export default Slider;

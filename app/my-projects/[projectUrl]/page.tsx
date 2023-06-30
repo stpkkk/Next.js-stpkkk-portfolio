@@ -1,8 +1,7 @@
 import React from "react";
 import { Metadata } from "next";
-import { getProjectCards } from "@data/project";
-import { Slider } from "@components/my-projects/Slider";
-import { Button } from "@components/Button";
+import { getProjectCards } from "@data";
+import { Slider, Button } from "@components";
 
 type Props = {
   params: {

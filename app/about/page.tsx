@@ -3,8 +3,7 @@ import React from "react";
 import Image from "next/image";
 import AboutImage from "public/assets/images/about.jpg";
 import HeroImage from "public/assets/images/hero.png";
-import { Skills } from "@components/about/Skills";
-import { TimeLine } from "./../../components/about/TimeLine";
+import { Skills, TimeLine } from "@components";
 import { getParagraphs } from "@data";
 
 export const metadata = {

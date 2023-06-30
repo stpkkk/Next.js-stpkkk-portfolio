@@ -31,7 +31,7 @@ const skillList: ISkill[] = [
   { id: 9, Icon: SiGit, title: "Git" },
 ];
 
-export const Skills: React.FC = () => {
+const Skills: React.FC = () => {
   return (
     <div className="p-4">
       <ul className="flex_center flex-wrap mx-auto gap-[20px] after:empty:flex-1">
@@ -44,3 +44,5 @@ export const Skills: React.FC = () => {
     </div>
   );
 };
+
+export default Skills;

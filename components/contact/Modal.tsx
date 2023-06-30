@@ -7,7 +7,7 @@ type ModalProps = {
   setIsModal: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-export const Modal: React.FC<ModalProps> = ({ isModal, setIsModal }) => {
+const Modal: React.FC<ModalProps> = ({ isModal, setIsModal }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -37,3 +37,5 @@ export const Modal: React.FC<ModalProps> = ({ isModal, setIsModal }) => {
     </div>
   );
 };
+
+export default Modal;

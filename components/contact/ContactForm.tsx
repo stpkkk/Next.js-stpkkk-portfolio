@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
-import { Modal } from "./Modal";
+import Modal from "./Modal";
 
 interface FormErrors {
   name?: string;
@@ -15,7 +15,7 @@ interface FormData {
   message: string;
 }
 
-export const ContactForm: React.FC = () => {
+const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -165,3 +165,5 @@ export const ContactForm: React.FC = () => {
     </form>
   );
 };
+
+export default ContactForm;
