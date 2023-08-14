@@ -51,7 +51,7 @@ const NavMobile: React.FC = () => {
     </div>
   ) : (
     <div className="flex_between p-4 dark:bg-bgContainer bg-white flex_end text-black dark:text-primary">
-      <div className="relative flex_center gap-10 font-amatic text-[24px]">
+      {/* <div className="relative flex_center gap-10 font-amatic text-[24px]">
         <ThemeToggle />
         <Link
           href={`https://next-js-stpkkk-portfolio.vercel.app${pathname}`}
@@ -60,7 +60,7 @@ const NavMobile: React.FC = () => {
         >
           EN
         </Link>
-      </div>
+      </div> */}
       <button
         onClick={handleToggleMobileMenu}
         type="button"
