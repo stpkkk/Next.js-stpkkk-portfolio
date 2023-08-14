@@ -53,13 +53,13 @@ const NavMobile: React.FC = () => {
     <div className="flex_between p-4 dark:bg-bgContainer bg-white flex_end text-black dark:text-primary">
       <div className="relative flex_center gap-10 font-amatic text-[24px]">
         <ThemeToggle />
-        <Link
+        {/* <Link
           href={`https://next-js-stpkkk-portfolio-git-ru-igorstepanov.vercel.app${pathname}`}
           className="hover:text-secondary"
           as={`https://next-js-stpkkk-portfolio-git-ru-igorstepanov.vercel.app${pathname}`}
         >
           RU
-        </Link>
+        </Link> */}
       </div>
       <button
         onClick={handleToggleMobileMenu}

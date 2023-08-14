@@ -33,7 +33,7 @@ export default async function Project({ params: { projectUrl } }: Props) {
   return (
     <div className="page_wrapper flex-col">
       <h1 className="head_text text-secondary">{title}</h1>
-      <div className="self-start text-justify mb-10 sm:mb-4 max-w-[800px]">
+      <div className="text-justify mb-10 sm:mb-4">
         {description.map((p, i) => (
           <p key={i}>
             {p}

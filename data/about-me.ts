@@ -3,19 +3,18 @@ import { IParagraphs } from "@types";
 export const getParagraphs: IParagraphs[] = [
   {
     id: 0,
-    text: "I`m a React developer from Petrozavodsk, I am passionate about creating highly dynamic and interactive user interfaces that seamlessly integrate with a variety of technologies. With years of experience in the field, I have honed my skills in both front-end development and back-end integration, allowing me to deliver complex web applications that meet the needs of my clients.",
+    text: "Hello World! My name is Igor Stepanov and I am a Frontend developer from the city of Petrozavodsk, passionate about developing interactive user interfaces. With more than 3 years of experience in this field, I have honed my skills in developing user interfaces, which has allowed me to create complex web applications that meet the needs of my employers and clients.",
   },
   {
     id: 1,
-    text: "My expertise in React allows me to create scalable and performant applications that are easy to maintain and update over time. I am dedicated to staying up-to-date with the latest advancements in the React ecosystem, and I am constantly exploring new libraries and tools that can help me build better applications.",
+    text: "I strive to create scalable and productive applications that are easy to maintain and update over time, as well as keep up to date with the latest developments in the interface and constantly explore new libraries and tools that will help me implement interesting applications.",
   },
   {
     id: 2,
-    text: "In addition to my technical skills, I am also a strong collaborator and communicator. I understand the importance of working closely with clients and other team members to ensure that the final product meets their needs and exceeds their expectations. I am always open to feedback and willing to make changes to ensure that the end result is a product that everyone is proud of.",
+    text: "In addition to my technical skills, I understand the importance of working closely with customers and other team members to ensure that the final product meets the needs of customers and exceeds their expectations. I am always open to feedback and ready to make changes so that everyone is proud of the end result.",
   },
-
   {
     id: 3,
-    text: "Whether you are looking to build a new web application from scratch or need help updating an existing project, I am confident that I have the skills and experience to deliver results that meet your needs. So if you are looking for a talented and experienced React developer to join your team, please don't hesitate to get in touch!",
+    text: "Whether you want to create a new web application from scratch or you need help updating an existing project, I'm sure I have the right skill and experience to achieve results that meet your needs. Therefore, if you are looking for a talented and experienced Frontend developer to join your team, do not hesitate and contact me! 😉",
   },
 ];
