@@ -9,7 +9,7 @@ export interface IExperience {
   link: string;
   linkTitle: string;
   position: string;
-  description: string;
+  description: string[];
   stack: string[];
   icon: IconType;
 }

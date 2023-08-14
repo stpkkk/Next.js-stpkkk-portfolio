@@ -38,7 +38,11 @@ const TimeLine: React.FC = () => {
             <div>
               <b>{point.position}</b>
             </div>
-            <div>{point.description}</div>
+            <ul className="flex flex-col gap-2">
+              {point.description.map((d, i) => (
+                <li key={i}>{d}</li>
+              ))}
+            </ul>
             <div>
               <p>Технолигии с которыми я работал:</p>
               <ul>
