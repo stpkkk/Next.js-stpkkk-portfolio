@@ -45,9 +45,9 @@ const Slider = ({ slides }: ISliderProps) => {
             <Image
               src={slide}
               alt="slide"
+              priority
               width={800}
               height={100}
-              priority
               className="h-auto w-full"
               placeholder="blur"
               blurDataURL="URL"

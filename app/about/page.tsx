@@ -12,7 +12,7 @@ export const metadata = {
 const AboutPage: React.FC = () => {
   return (
     <div className="page_wrapper gap-16 sm:gap-4">
-      <div className="bg-secondary flex_center flex-col rounded-lg basis-[40%] p-10 sm:p-4 md:w-full">
+      <div className="flex_center basis-[40%] flex-col rounded-lg bg-secondary p-10 sm:p-4 md:w-full">
         <h1 className="head_text text-black">Обо мне</h1>
         <Image
           src={AboutImage}
@@ -30,7 +30,7 @@ const AboutPage: React.FC = () => {
         <Image
           src={HeroImage}
           alt="hero"
-          className="mx-auto h-auto w-[300px] mb-10 sm:w-[200px] sm:my-4"
+          className="mx-auto mb-10 h-auto w-[300px] sm:my-4 sm:w-[200px]"
         />
         <ul className="flex flex-col gap-y-4 font-bree">
           {getParagraphs.map(p => (
@@ -38,8 +38,8 @@ const AboutPage: React.FC = () => {
           ))}
         </ul>
       </div>
-      <div className="mx-auto w-full bg-[url(../public/assets/icons/bg.svg)] rounded-lg">
-        <h2 className="head_text text-center p-10 sm:p-5 text-secondary">
+      <div className="mx-auto w-full rounded-lg bg-[url(../public/assets/icons/bg.svg)]">
+        <h2 className="head_text p-10 text-center text-secondary sm:p-5">
           Мой Опыт
         </h2>
         <TimeLine />

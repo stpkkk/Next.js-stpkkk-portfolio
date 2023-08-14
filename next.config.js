@@ -5,6 +5,7 @@ const nextConfig = {
     dirs: ["pages", "components"],
   },
   images: {
+    formats: ["image/avif", "image/webp"],
     domains: ["example.com"],
   },
 };
