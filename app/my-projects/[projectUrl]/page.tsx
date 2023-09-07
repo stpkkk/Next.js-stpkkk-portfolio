@@ -17,7 +17,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function Project({ params: { projectUrl } }: Props) {
+export default function Project({ params: { projectUrl } }: Props) {
   const project = getProjectCards.find(item => item.url === projectUrl);
 
   if (!project) {
