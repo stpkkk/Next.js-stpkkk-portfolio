@@ -11,7 +11,7 @@ export const getProjectCards: IProjectCard[] = [
 				"Tick-Time pizza is an application for ordering pizza and other fast food for the company 'Tick Time' in the city of Petrozavodsk. The functionality of which I implemented myself on the stack: Next.js, React.js, Typescript, Redux Toolkit, Tailwind CSS. In this application there is authorization, the ability to add products to the cart depending on the parameters, adding to favorites, sorting products, making delivery, etc.",
 			],
 		],
-		liveLink: '',
+		liveLink: 'https://stpkticktime.vercel.app/',
 		codeLink: 'https://github.com/stpkkk/tick-time-pizza',
 		slider: [
 			'/assets/images/tick-time-pizza/tick-time-1.png',
