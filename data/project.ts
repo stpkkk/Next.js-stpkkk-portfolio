@@ -11,6 +11,7 @@ export const getProjectCards: IProjectCard[] = [
 				"Тик-Тайм пицца - приложение для заказа пиццы и другого фастфуда для компании 'Тик Тайм' в городе Петрозаводск. Функционал которого я реализовал самостоятельно на стэке: Next.js, React.js, Typescript, Redux Toolkit, Tailwind CSS. В данном приложении присутствует авторизация, возможность добавления продуктов в корзину в зависимости от параметров, добавление в избранное, сортировка продуктов, оформление доставки и др.",
 			],
 		],
+		liveLink: 'https://stpkticktime.vercel.app/',
 		codeLink: 'https://github.com/stpkkk/tick-time-pizza',
 		slider: [
 			'/assets/images/tick-time-pizza/tick-time-1.png',
